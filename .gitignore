@@ -9,3 +9,4 @@ media/
 static/
 .vscode/
 *.swp
+env.py
