@@ -1,7 +1,7 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse
+from django.contrib.auth import authenticate, login
 from django.contrib.auth.models import User
-from django.shortcuts import redirect
 
 # Create your views here.
  
@@ -16,18 +16,23 @@ def register(request):
         if User.objects.filter(username=username).exists():
             return HttpResponse('User already exists')
         else:
-            # Cria um novo usuário
+            # Create a new user
             user = User.objects.create_user(username=username, email=email, password=password)
             user.save()
-            return redirect('home')  # Redireciona para a página inicial após o registro bem-sucedido
+            return redirect('home')
+        
 
-
-
-
-
-
-
-
-
-def login(request):
-    return render(request, 'login.html')
+def login_view(request):
+    if request.method == 'POST':
+        username = request.POST.get('username')
+        password = request.POST.get('password')
+        
+        user = authenticate(request, username=username, password=password)
+        
+        if user is not None:
+            login(request, user)
+            return HttpResponse('You are now logged in.')
+        else:
+            return HttpResponse('Invalid login credentials.')
+    else:
+        return render(request, 'login.html')
