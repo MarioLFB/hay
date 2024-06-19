@@ -34,6 +34,10 @@ INSTALLED_APPS = [
     'allauth.account',
     'django.contrib.staticfiles',
     'users',
+    'home',
+    'menu',
+    'bookings',
+    'contact',
 ]
 
 SITE_ID = 1
