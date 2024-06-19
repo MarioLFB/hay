@@ -14,14 +14,14 @@ def register(request):
         password = request.POST.get('password')
         
         if User.objects.filter(username=username).exists():
-            return HttpResponse('User already exists')
+            return render(request, 'register.html', {'error_message': 'User already exists'})
         else:
             # Create a new user
             user = User.objects.create_user(username=username, email=email, password=password)
             user.save()
-            return redirect('home')
-        
+            return redirect('login')
 
+        
 def login_view(request):
     if request.method == 'POST':
         username = request.POST.get('username')
@@ -31,8 +31,12 @@ def login_view(request):
         
         if user is not None:
             login(request, user)
-            return HttpResponse('You are now logged in.')
+            return redirect('home')
         else:
-            return HttpResponse('Invalid login credentials.')
+            return render(request, 'login.html', {'error_message': 'Invalid login credentials'})
     else:
         return render(request, 'login.html')
+    
+@login_required
+def profile(request):
+    return render(request, 'profile.html')
