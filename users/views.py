@@ -1,8 +1,8 @@
 from django.shortcuts import render, redirect
-from django.http import HttpResponse
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.models import User
 from django.contrib.auth.decorators import login_required
+from .forms import UserLoginForm
 
 # Create your views here.
  
@@ -24,19 +24,25 @@ def register(request):
 
         
 def login_view(request):
+    error_message = None
+    
     if request.method == 'POST':
-        username = request.POST.get('username')
-        password = request.POST.get('password')
-        
-        user = authenticate(request, username=username, password=password)
-        
-        if user is not None:
-            login(request, user)
-            return redirect('home')
-        else:
-            return render(request, 'login.html', {'error_message': 'Invalid login credentials'})
+        form = UserLoginForm(request.POST)
+        if form.is_valid():
+            username = form.cleaned_data['username']
+            password = form.cleaned_data['password']
+            
+            user = authenticate(request, username=username, password=password)
+            
+            if user is not None:
+                login(request, user)
+                return redirect('home')  # Redirecionar para a página de sucesso após o login
+            else:
+                error_message = 'Invalid username or password.'
     else:
-        return render(request, 'login.html')
+        form = UserLoginForm()
+
+    return render(request, 'login.html', {'form': form, 'error_message': error_message})
     
 @login_required
 def profile(request):
