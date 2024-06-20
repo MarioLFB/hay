@@ -5,7 +5,6 @@ from django.contrib.auth.decorators import login_required
 from .forms import UserLoginForm, UserRegisterForm
 
 # Create your views here.
- 
 def register(request):
     if request.method == 'POST':
         form = UserRegisterForm(request.POST)
@@ -44,7 +43,7 @@ def login_view(request):
             
             if user is not None:
                 login(request, user)
-                return redirect('home')  # Redirecionar para a página de sucesso após o login
+                return redirect('home')
             else:
                 error_message = 'Invalid username or password.'
     else:
