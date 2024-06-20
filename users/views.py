@@ -15,6 +15,7 @@ def register(request):
             password_confirm = form.cleaned_data['password_confirm']
             
             if password == password_confirm:
+                
                 if User.objects.filter(username=username).exists():
                     form.add_error('username', 'User already exists')
                 else:
