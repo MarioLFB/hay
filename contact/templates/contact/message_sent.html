@@ -6,9 +6,9 @@
 <main>
     <h1>Message Sent!</h1>
     <p>Thank you for contacting us!</p>
-    {% if form.instance.name %}
-        <p>We received your message from {{ form.instance.name }}.</p>
-    {% endif %}
     <p>We will respond shortly.</p>
+    <form action="{% url 'home' %}" method="get">
+        <button type="submit">Ir para Home</button>
+    </form>
 </main>
 {% endblock %}
