@@ -1,7 +1,6 @@
 from django.shortcuts import render, redirect
 from .forms import ContactForm
 
-
 # Create your views here.
 
 def contact(request):
@@ -16,4 +15,5 @@ def contact(request):
     return render(request, 'contact/contact.html', {'form': form})
 
 def message_sent(request):
-    return render(request, 'contact/message_sent.html')
+    form = ContactForm()
+    return render(request, 'contact/message_sent.html', {'form': form})

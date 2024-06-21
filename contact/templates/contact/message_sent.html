@@ -1,9 +1,14 @@
 {% extends 'base.html' %}
-{% block title %}MEssage Sent{% endblock %}
+
+{% block title %}Message Sent{% endblock %}
 
 {% block content %}
 <main>
     <h1>Message Sent!</h1>
-    <p>Thank you for contacting us.</p>
+    <p>Thank you for contacting us!</p>
+    {% if form.instance.name %}
+        <p>We received your message from {{ form.instance.name }}.</p>
+    {% endif %}
+    <p>We will respond shortly.</p>
 </main>
 {% endblock %}
