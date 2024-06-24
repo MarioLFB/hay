@@ -6,7 +6,11 @@ def booking_table(request):
         form = TableForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('bookings')
+            return redirect('booked')
     else:
         form = TableForm()
     return render(request, 'bookings/bookings.html', {'form': form})
+
+
+def booked_view(request):
+    return render(request, 'bookings/booked.html')
