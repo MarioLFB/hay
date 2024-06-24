@@ -4,6 +4,8 @@
 {% block content %}
 <h1>Booked</h1>
 <p>Thank you for booking with us. Your booking reference is.</p>
-<p>Click here to Return</a>.</p>
+<form action="{% url 'bookings' %}" method="get">
+    <button type="submit">Ir para Home</button>
+</form>
 {% endblock %}
 
