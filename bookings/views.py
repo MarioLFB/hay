@@ -1,9 +1,6 @@
 from django.shortcuts import render, redirect
 from .forms import TableForm
 
-
-# Create your views here.
-
 def booking_table(request):
     if request.method == 'POST':
         form = TableForm(request.POST)
@@ -13,6 +10,3 @@ def booking_table(request):
     else:
         form = TableForm()
     return render(request, 'bookings/bookings.html', {'form': form})
-    
-        
-    
