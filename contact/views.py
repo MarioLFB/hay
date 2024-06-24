@@ -11,7 +11,6 @@ def contact(request):
             return redirect('message_sent')
     else:
         form = ContactForm()
-
     return render(request, 'contact/contact.html', {'form': form})
 
 def message_sent(request):
