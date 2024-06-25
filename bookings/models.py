@@ -6,7 +6,7 @@ from datetime import date
 
 class Table(models.Model):
     table_name = models.CharField(max_length=100)
-    table_phone = models.CharField(max_length=100, help_text='Enter your phone number', default='+44 20 7123 4567')
+    table_phone = models.CharField(max_length=100, default='+44 20 7123 4567')
     table_email = models.EmailField(default='email@email.com')
     table_capacity = models.IntegerField(
         validators=[MinValueValidator(1), MaxValueValidator(10)],
