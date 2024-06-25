@@ -4,7 +4,7 @@ from django import forms
 class TableForm(forms.ModelForm):
     class Meta:
         model = Table
-        fields = ['table_name', 'table_capacity', 'date']
+        fields = ['table_name', 'table_capacity']
 
 
 class TableDate(forms.ModelForm):
