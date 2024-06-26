@@ -26,3 +26,11 @@ def booked_view(request):
 def my_bookings(request):
     bookings = Table.objects.filter(user=request.user)
     return render(request, 'bookings/mybookings.html', {'bookings': bookings})
+
+
+
+def delete_bookings(request, booking_id):
+    booking = Table.objects.get(pk=booking_id)
+    booking.delete()
+    return redirect('mybookings')
+    
