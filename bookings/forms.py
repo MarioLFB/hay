@@ -20,3 +20,12 @@ class TableForm(forms.ModelForm):
             'table_time': 'Time',
         }
 
+    def __init__(self, *args, **kwargs):
+        self.user = kwargs.pop('user', None)
+        super().__init__(*args, **kwargs)
+
+    def clean(self):
+        cleaned_data = super().clean()
+        if Table.objects.filter(user=self.user).exists():
+            raise forms.ValidationError("You have already made a booking. You can only make one booking at a time.")
+        return cleaned_data
