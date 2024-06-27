@@ -1,5 +1,5 @@
-from .models import Table
 from django import forms
+from .models import Table
 
 class TableForm(forms.ModelForm):
     table_capacity = forms.ChoiceField(choices=[(i, i) for i in range(1, 11)], label='Number of people')
