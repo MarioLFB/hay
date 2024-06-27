@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from .forms import TableForm
 from .models import Table
 from django.contrib.auth.decorators import login_required
+from django.contrib import messages
 
 
 @login_required
@@ -11,6 +12,9 @@ def booking_table(request):
         if form.is_valid():
             table = form.save(commit=False)
             table.user = request.user
+            if Table.objects.filter(user=request.user).exists():
+                messages.error(request, "You have already made a booking. You can only make one booking at a time.")
+                return redirect('mybookings')
             table.save()
             return redirect('booked')
     else:

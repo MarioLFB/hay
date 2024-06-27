@@ -4,6 +4,16 @@
 {% block content %}
 <h1> My Bookings </h1>
 <div class="container">
+
+
+{% if messages %}
+    {% for message in messages %}
+        <div class="alert alert-warning{% if message.tags %} {{ message.tags }}{% endif %}" role="alert">
+            {{ message }}
+        </div>
+    {% endfor %}
+{% endif %}
+
 <table class="table">
     <thead>
         <tr>
