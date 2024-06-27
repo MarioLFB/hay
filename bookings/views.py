@@ -32,9 +32,18 @@ def my_bookings(request):
     return render(request, 'bookings/mybookings.html', {'bookings': bookings})
 
 
-
 def delete_bookings(request, booking_id):
     booking = Table.objects.get(pk=booking_id)
     booking.delete()
     return redirect('mybookings')
+
+def edit_bookings(request, booking_id):
+    booking = Table.objects.get(pk=booking_id)
+    form = TableForm(instance=booking)
+    if request.method == 'POST':
+        form = TableForm(request.POST, instance=booking)
+        if form.is_valid():
+            form.save()
+            return redirect('mybookings')
+    return render(request, 'bookings/edit_bookings.html', {'form': form})
     
