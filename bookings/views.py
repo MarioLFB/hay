@@ -21,8 +21,14 @@ def booking_table(request):
         form = TableForm()
     return render(request, 'bookings/bookings.html', {'form': form})
 
+def login_needed(request):
+    messages.error(request, "You need to login to make a booking.")
+    return render(request, 'loginneeded.html')
+
 
 def booked_view(request):
+    if not request.user.is_authenticated:
+        return login_needed(request)
     return render(request, 'bookings/booked.html')
 
 
