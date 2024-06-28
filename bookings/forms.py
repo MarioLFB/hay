@@ -27,5 +27,5 @@ class TableForm(forms.ModelForm):
     def clean(self):
         cleaned_data = super().clean()
         if self.user and Table.objects.filter(user=self.user).exists():
-            raise forms.ValidationError("You have already made a booking. You can only make one booking at a time.")
+            raise forms.ValidationError("")
         return cleaned_data

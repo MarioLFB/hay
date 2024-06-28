@@ -7,7 +7,6 @@ from django.contrib import messages
 
 
 def login_needed(request):
-    messages.error(request, "You need to login to make a booking.")
     return render(request, 'loginneeded.html')
 
 
