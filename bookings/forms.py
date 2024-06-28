@@ -6,12 +6,15 @@ class TableForm(forms.ModelForm):
 
     class Meta:
         model = Table
-        fields = ['table_name', 'table_phone', 'table_email', 'table_capacity', 'table_date', 'table_time']
+        fields = ['table_capacity', 'table_name', 'table_phone', 'table_email', 'table_date', 'table_time']
         widgets = {
-            'table_date': forms.DateInput(attrs={'type': 'date'}),
-            'table_time': forms.TimeInput(attrs={'type': 'time'}),
+            'table_name': forms.TextInput(attrs={'class': 'form-control'}),
+            'table_phone': forms.TextInput(attrs={'class': 'form-control'}),
+            'table_email': forms.EmailInput(attrs={'class': 'form-control'}),
+            'table_capacity': forms.Select(attrs={'class': 'form-control'}),
+            'table_date': forms.DateInput(attrs={'type': 'date', 'class': 'form-control'}),
+            'table_time': forms.TimeInput(attrs={'type': 'time', 'class': 'form-control'}),
         }
-
         labels = {
             'table_name': 'Name',
             'table_phone': 'Phone',

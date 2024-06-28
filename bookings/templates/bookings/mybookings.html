@@ -2,10 +2,11 @@
 {% block title %}My Bookings{% endblock %}
 
 {% block content %}
-<h1> My Bookings </h1>
-<div class="container">
 
+<div class="container mt-5">
+<h1>My Bookings</h1>
 
+<div class="container mt-5">
 {% if messages %}
     {% for message in messages %}
         <div class="alert alert-warning{% if message.tags %} {{ message.tags }}{% endif %}" role="alert">
@@ -43,6 +44,7 @@
         
     </tbody>
 </table> 
+</div>
 </div>
 
 {% endblock %}
