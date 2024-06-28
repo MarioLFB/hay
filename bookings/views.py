@@ -5,8 +5,16 @@ from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 
 
-@login_required
+
+def login_needed(request):
+    messages.error(request, "You need to login to make a booking.")
+    return render(request, 'loginneeded.html')
+
+
 def booking_table(request):
+    if not request.user.is_authenticated:
+        return login_needed(request)
+    
     if request.method == 'POST':
         form = TableForm(request.POST)
         if form.is_valid():
@@ -21,16 +29,11 @@ def booking_table(request):
         form = TableForm()
     return render(request, 'bookings/bookings.html', {'form': form})
 
-def login_needed(request):
-    messages.error(request, "You need to login to make a booking.")
-    return render(request, 'loginneeded.html')
-
 
 def booked_view(request):
     if not request.user.is_authenticated:
         return login_needed(request)
     return render(request, 'bookings/booked.html')
-
 
 @login_required
 def my_bookings(request):
