@@ -1,7 +1,19 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block title %}Update Bookings{% endblock %}
 
 {% block content %}
+
+
+{% if "placeholder" in post.featured_image.url %}
+<img class="card-img-top" src="{% static 'images/background1.png' %}"
+  alt="placeholder image">
+{% else %}
+<img class="card-img-top" src=" {{ post.featured_image.url }}"
+  alt="{{ home.title }}">
+{% endif %}
+
+
 <div class="container mt-5">
     <form method="POST">
         {% csrf_token %}
