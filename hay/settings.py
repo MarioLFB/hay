@@ -34,11 +34,9 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'django.contrib.staticfiles',
-    'cloudinary_storage',
     'users',
     'home',
     'menu',
-    'cloudinary',
     'bookings',
     'contact',
 ]

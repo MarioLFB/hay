@@ -2,8 +2,6 @@ from django.db import models
 from django.core.validators import MaxValueValidator, MinValueValidator
 from django.contrib.auth.models import User
 from datetime import date
-from cloudinary.models import CloudinaryField
-
 # Create your models here.
 
 class Table(models.Model):
@@ -13,7 +11,7 @@ class Table(models.Model):
     table_capacity = models.IntegerField(
         validators=[MinValueValidator(1), MaxValueValidator(10)],
     )
-    
+
     table_date = models.DateField(default=date.today)
     table_time = models.TimeField(default='08:00:00')
     user = models.ForeignKey(User, null=True, on_delete=models.CASCADE)
