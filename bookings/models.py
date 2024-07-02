@@ -13,7 +13,7 @@ class Table(models.Model):
     table_capacity = models.IntegerField(
         validators=[MinValueValidator(1), MaxValueValidator(10)],
     )
-    featured_image = CloudinaryField('image', default='placeholder')
+    
     table_date = models.DateField(default=date.today)
     table_time = models.TimeField(default='08:00:00')
     user = models.ForeignKey(User, null=True, on_delete=models.CASCADE)
