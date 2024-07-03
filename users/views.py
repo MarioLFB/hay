@@ -57,6 +57,7 @@ def login_view(request):
 @login_required
 def logout_view(request):
     logout(request)
+    messages.success(request, 'You have successfully logged out.')
     return redirect('login')
 
 @login_required
