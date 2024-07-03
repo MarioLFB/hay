@@ -3,4 +3,13 @@
 {% block title %}Home{% endblock %}
 
 {% block content %}
+
+{% for message in messages%}
+<div class="alert alert-success" role="alert" id="success-message">
+    {{ message }}
+</div>
+{% endfor %}
+
+
+
 {% endblock %}
