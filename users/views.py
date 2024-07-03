@@ -23,6 +23,7 @@ def register(request):
                     # Create a new user
                     user = User.objects.create_user(username=username, email=email, password=password)
                     user.save()
+                    messages.success(request, 'You have successfully registered. Please login.')
                     return redirect('login')
             else:
                 form.add_error('password_confirm', 'Passwords do not match')
