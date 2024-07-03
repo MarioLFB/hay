@@ -52,6 +52,7 @@ def edit_bookings(request, booking_id):
         form = TableForm(request.POST, instance=booking)
         if form.is_valid():
             form.save()
+            messages.success(request, 'Booking updated successfully')
             return redirect('mybookings')
     return render(request, 'bookings/edit_bookings.html', {'form': form})
     
