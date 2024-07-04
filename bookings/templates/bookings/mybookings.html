@@ -8,6 +8,8 @@
 <h1>My Bookings</h1>
 </div>
 
+{% if bookings %}
+
 <div class="container mt-5">
     {% for message in messages%}
     <div class="container">
@@ -47,6 +49,13 @@
     </tbody>
 </table> 
 </div>
-</div>
+    
+{% else %}
+    <div class="container mt-5">
+        <div class="alert alert-warning text-center" role="alert" id="warning-message">
+            You have no bookings yet. Click <a href="{% url 'bookings' %}">here</a> to make a booking.
+        </div>
+{% endif %}
+    </div>
 
 {% endblock %}
