@@ -2,10 +2,14 @@
 {% block title %}Booked{% endblock %}
 
 {% block content %}
+<div class="container mt-5 bg-color text-center">
 <h1>Booked</h1>
-<p>Thank you for booking with us. Your booking reference is.</p>
+<p>Thank you for booking with us. We will contact you to confirm.</p>
 <form action="{% url 'mybookings' %}" method="get">
-    <button type="submit">Home</button>
+    <div class="d-grid gap-2 col-6 mx-auto">
+    <button class="btn btn-primary" type="submit">Home</button>
+    </div>
 </form>
+</div>
 {% endblock %}
 

@@ -2,7 +2,7 @@
 {% block title %}Register{% endblock %}
 
 {% block content %}
-<div class="container mt-5">
+<div class="container mt-5 bg-color">
     <form method="POST">
         {% csrf_token %}
         {{ form.as_p }}
