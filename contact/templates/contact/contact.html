@@ -2,7 +2,7 @@
 {% block title %}Contact{% endblock %}
 
 {% block content %}
-<div class="container bg-color">
+<div class="container bg-color mt-5 text-center">
 <form method="post">
     {% csrf_token %}
     {{ form.as_p }}

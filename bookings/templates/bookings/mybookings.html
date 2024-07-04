@@ -2,59 +2,45 @@
 {% block title %}My Bookings{% endblock %}
 
 {% block content %}
+{% for message in messages %}
+<div class="container">
+<div class="alert alert-success container" role="alert" id="success-message">
+    {{ message }}
+</div>
+</div>
+{% endfor %}
 
 <div class="container mt-5 bg-color">
-<div class="text-center">
-<h1>My Bookings</h1>
-</div>
-
-<div class="container mt-5">
-    {% for message in messages%}
-    <div class="container">
-        <div class="alert alert-success" role="alert" id="success-message">
-            {{ message }}
-        </div>
+    <div class="text-center">
+        <h1>My Bookings</h1>
     </div>
-    {% endfor %}
 
-{% if bookings %}
-<table class="table table-light table-borderless">
-    <thead>
-        <tr>
-            <th scope="col">Name</th>
-            <th scope="col">Phone</th>
-            <th scope="col">Email</th>
-            <th scope="col">Capacity</th>
-            <th scope="col">Date</th>
-            <th scope="col">Time</th>
-            <th scope="col"></th>
-            <th scope="col"></th>
-        </tr>
-    </thead>
-    <tbody>
-        {% for booking in bookings %}
-            <tr>
-                <td>{{ booking.table_name }}</td>
-                <td>{{ booking.table_phone }}</td>
-                <td>{{ booking.table_email }}</td>
-                <td>{{ booking.table_capacity }}</td>
-                <td>{{ booking.table_date }}</td>
-                <td>{{ booking.table_time }}</td>
-                <td><a href="{% url 'delete-bookings' %}" class="btn btn-danger btn-sm">Delete</a></td>
-                <td><a href="{% url 'edit-bookings' booking.id %}" class="btn btn-primary btn-sm">Update</a></td>
-            </tr>
-        {% endfor %}
-        
-    </tbody>
-</table> 
-</div>
-    
-{% else %}
     <div class="container mt-5">
-        <div class="alert alert-warning text-center" role="alert" id="warning-message">
+        {% if bookings %}
+        <div class="row row-cols-1 row-cols-md-2">
+            {% for booking in bookings %}
+            <div class="col mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ booking.table_name }}</h5>
+                        <p class="card-text">Phone: {{ booking.table_phone }}</p>
+                        <p class="card-text">Email: {{ booking.table_email }}</p>
+                        <p class="card-text">Capacity: {{ booking.table_capacity }}</p>
+                        <p class="card-text">Date: {{ booking.table_date }}</p>
+                        <p class="card-text">Time: {{ booking.table_time }}</p>
+                        <a href="{% url 'delete-bookings' %}" class="btn btn-danger btn-sm">Delete</a>
+                        <a href="{% url 'edit-bookings' booking.id %}" class="btn btn-primary btn-sm">Update</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% else %}
+        <div class="alert alert-warning text-center" role="alert">
             You have no bookings yet. Click <a href="{% url 'bookings' %}">here</a> to make a booking.
         </div>
-{% endif %}
+        {% endif %}
     </div>
+</div>
 
 {% endblock %}
