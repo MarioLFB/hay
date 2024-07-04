@@ -41,9 +41,13 @@ def my_bookings(request):
 
 
 def delete_bookings(request):
+    if request.method == 'POST':
+        Table.objects.filter(user=request.user).delete()
+        messages.success(request, 'Booking deleted successfully')
+        return redirect('mybookings')
     return render(request, 'bookings/deletebookings.html')
 
-
+ 
 def edit_bookings(request, booking_id):
     booking = Table.objects.get(pk=booking_id)
     form = TableForm(instance=booking)
