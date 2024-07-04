@@ -6,8 +6,10 @@
     <form method="POST">
         {% csrf_token %}
         {{ form.as_p }}
-        <button type="submit" class="btn btn-primary">Book</button>
-        <a href="{% url 'mybookings' %}" class="btn btn-secondary">My Bookings</a>
+        <div class="text-center">
+        <button type="submit" class="btn btn-primary btn-sm">Book</button>
+        <a href="{% url 'mybookings' %}" class="btn btn-secondary btn-sm">My Bookings</a>
+        </div>
     </form>
 </div>
 {% endblock %}
