@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from .forms import TableForm
 from .models import Table
 from django.contrib.auth.decorators import login_required
@@ -40,10 +40,9 @@ def my_bookings(request):
     return render(request, 'bookings/mybookings.html', {'bookings': bookings})
 
 
-def delete_bookings(request, booking_id):
-    booking = Table.objects.get(pk=booking_id)
-    booking.delete()
-    return redirect('mybookings')
+def delete_bookings(request):
+    return render(request, 'bookings/deletebookings.html')
+
 
 def edit_bookings(request, booking_id):
     booking = Table.objects.get(pk=booking_id)
