@@ -8,8 +8,6 @@
 <h1>My Bookings</h1>
 </div>
 
-{% if bookings %}
-
 <div class="container mt-5">
     {% for message in messages%}
     <div class="container">
@@ -19,6 +17,7 @@
     </div>
     {% endfor %}
 
+{% if bookings %}
 <table class="table table-light table-borderless">
     <thead>
         <tr>

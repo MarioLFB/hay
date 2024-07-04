@@ -23,6 +23,7 @@ def booking_table(request):
                 messages.error(request, "You have already made a booking. You can only make one booking at a time.")
                 return redirect('mybookings')
             table.save()
+            messages.success(request, 'Booking made successfully')
             return redirect('booked')
     else:
         form = TableForm()
@@ -43,7 +44,7 @@ def my_bookings(request):
 def delete_bookings(request):
     if request.method == 'POST':
         Table.objects.filter(user=request.user).delete()
-        messages.success(request, 'Booking deleted successfully')
+        messages.warning(request, 'Booking deleted successfully')
         return redirect('mybookings')
     return render(request, 'bookings/deletebookings.html')
 
