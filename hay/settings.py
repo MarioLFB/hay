@@ -1,6 +1,7 @@
 from pathlib import Path
 import os
 import dj_database_url
+import sys
 
 
 if os.path.isfile('env.py'):
@@ -90,6 +91,9 @@ WSGI_APPLICATION = 'hay.wsgi.application'
 DATABASES = {
     'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
+
+if 'test' in sys.argv:
+    DATABASES['default']['ENGINE'] = 'django.db.backends.sqlite3'
 
 
 AUTHENTICATION_BACKENDS = [
