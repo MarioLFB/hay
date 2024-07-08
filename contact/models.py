@@ -15,6 +15,10 @@ class ContactMessage(models.Model):
         super().clean()
         if not validate_email(self.email):
             raise ValidationError({'email': 'Invalid email format'})
+        
+    def save(self, *args, **kwargs):
+        self.full_clean()
+        super().save(*args, **kwargs)
 
 
 
