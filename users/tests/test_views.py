@@ -2,8 +2,6 @@ from django.test import TestCase
 from django.urls import reverse
 from django.contrib.auth.models import User
 from django.contrib.messages import get_messages
-from django.contrib.auth import authenticate, login, logout
-from django.contrib.auth.decorators import login_required
 
 
 class RegisterViewTest(TestCase):
@@ -76,4 +74,37 @@ class LoginViewTest(TestCase):
         messages = list(get_messages(response.wsgi_request))
         self.assertEqual(len(messages), 1)  # Assert that there is exactly one message
         self.assertEqual(str(messages[0]), 'You have successfully logged in.')
+
+
+class LogoutViewTest(TestCase):
+    """
+    Test case for the 'logout_view' function to verify successful user logout,
+    including redirection to 'home' and success message display.
+    """
+    def setUp(self):
+        self.url = reverse('logout')  # Reverse URL for the 'logout' view
+
+        # Create a test user and log them in
+        self.username = 'testuser'
+        self.password = 'password123'
+        self.user = User.objects.create_user(username=self.username, password=self.password)
+        self.client.login(username=self.username, password=self.password)
+
+    def test_logout_success(self):
+        # Test logout
+        response = self.client.post(self.url)
+
+        # Assert that the HTTP status code of the response is 302 (Redirect)
+        self.assertEqual(response.status_code, 302)
+
+        # Assert that after successful logout, the view redirects to the 'home' page
+        self.assertRedirects(response, reverse('home'))
+
+        # Assert that the user is not authenticated after logout
+        self.assertFalse(response.wsgi_request.user.is_authenticated)
+
+        # Assert that a success message is sent as a flash message
+        messages = list(get_messages(response.wsgi_request))
+        self.assertEqual(len(messages), 1)  # Assert that there is exactly one message
+        self.assertEqual(str(messages[0]), 'You have successfully logged out.')
 
