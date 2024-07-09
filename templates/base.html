@@ -16,8 +16,10 @@
 
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container justify-content-center">
-                <a class="navbar-brand logo" href="{% url 'home' %}">H.A.Y</a>
+            <div class="container justify-content-center mt-5">
+                <a class="navbar-brand" href="{% url 'home' %}">
+                    <img src="{% static 'images\hay_logo.png' %}" alt="logo" class="logo">
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -52,6 +54,10 @@
         {% block content %}
         {% endblock %}
     </main>
+
+    <footer class="fixed-bottom p-3">
+        <span>Place fixed footer content here.</span>
+    </footer>
 
 
 
