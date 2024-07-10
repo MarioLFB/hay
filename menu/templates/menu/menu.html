@@ -3,7 +3,7 @@
 {% block title %}Menu{% endblock %}
 
 {% block content %}
-    <div class="nav justify-content-center mt-3 d-flex align-items-center">
+    <div class="nav justify-content-center mt-3 d-flex align-items-center menu-navbar">
     <li class="nav-item">
         <a class="nav-link menulink" href="{% url 'menu' %}">Food</a>
     </li>
@@ -14,5 +14,36 @@
         <a class="nav-link menulink" href="{% url 'drinks' %}">Drinks</a>
     </li>
     </div>
+
+    <div class="container text-center food-menu p-5">
+        <div class="row">
+            <div class="col-md-12 mb-5">
+                <p class="mb-1">Garlic Butter Shrimp - Sautéed shrimp in garlic butter sauce. - 12.99</p>
+                <p class="mb-1">Stuffed Mushrooms - Mushrooms filled with cheese and herbs. - 10.99</p>
+                <p class="mb-1">Bruschetta - Grilled bread topped with tomatoes, basil, and balsamic glaze. - 11.99</p>
+                <p class="mb-1">Caesar Salad - Crisp romaine, parmesan, and croutons with Caesar dressing. - 13.99</p>
+            </div>
+            <div class="col-md-12 mb-5">
+                <p class="mb-1">Ribeye Steak - Grilled to perfection, served with herb butter. - 18.99</p>
+                <p class="mb-1">Filet Mignon - Tender filet cooked to your liking, with a red wine reduction. - 15.99</p>
+                <p class="mb-1">Grilled Salmon - Fresh salmon fillet with lemon-dill sauce. - 14.99</p>
+                <p class="mb-1">BBQ Pork Ribs - Slow-cooked ribs with house BBQ sauce. - 12.99</p>
+            </div>
+            <div class="col-md-12 mb-5">
+                <p class="mb-1">Mashed Potatoes - Creamy mashed potatoes with gravy. - 5.99</p>
+                <p class="mb-1">Garlic Green Beans - Fresh green beans sautéed with garlic. - 4.99</p>
+                <p class="mb-1">Mac and Cheese - Cheesy and comforting classic. - 6.99</p>
+                <p class="mb-1">Baked Potato - Served with butter, sour cream, and chives. - 3.99</p>
+            </div>
+            <div class="col-md-12 mb-5">
+                <p class="mb-1">Cheesecake - Classic New York-style cheesecake with a berry compote. - 7.99</p>
+                <p class="mb-1">Chocolate Lava Cake - Warm chocolate cake with a gooey center. - 6.99</p>
+                <p class="mb-1">Apple Pie - Traditional apple pie with a scoop of vanilla ice cream. - 8.99</p>
+            </div>
+        </div>
+    </div>
+    
+    
+
 
 {% endblock %}
