@@ -4,3 +4,9 @@ from django.shortcuts import render
 
 def menu(request):
     return render(request, 'menu/menu.html')
+
+def menu_food(request):
+    return render(request, 'menu/food.html')
+
+def menu_drinks(request):
+    return render(request, 'menu/drinks.html')
