@@ -7,8 +7,8 @@
         {% csrf_token %}
         {{ form.as_p }}
         <div class="text-center">
-        <button type="submit" class="btn btn-primary btn-sm">Book</button>
-        <a href="{% url 'mybookings' %}" class="btn btn-secondary btn-sm">My Bookings</a>
+        <button type="submit" class="btn btn-primary btn-sm custom-border-radius">Book</button>
+        <a href="{% url 'mybookings' %}" class="btn btn-secondary btn-sm custom-border-radius">My Bookings</a>
         </div>
     </form>
 </div>
