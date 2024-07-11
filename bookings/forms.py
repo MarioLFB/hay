@@ -8,12 +8,12 @@ class TableForm(forms.ModelForm):
         model = Table
         fields = ['table_capacity', 'table_name', 'table_phone', 'table_email', 'table_date', 'table_time']
         widgets = {
-            'table_name': forms.TextInput(attrs={'class': 'form-control'}),
-            'table_phone': forms.TextInput(attrs={'class': 'form-control'}),
-            'table_email': forms.EmailInput(attrs={'class': 'form-control'}),
-            'table_capacity': forms.Select(attrs={'class': 'form-control'}),
-            'table_date': forms.DateInput(attrs={'type': 'date', 'class': 'form-control'}),
-            'table_time': forms.TimeInput(attrs={'type': 'time', 'class': 'form-control'}),
+            'table_name': forms.TextInput(attrs={'class': 'form-control custom-border-radius'}),
+            'table_phone': forms.TextInput(attrs={'class': 'form-control custom-border-radius'}),
+            'table_email': forms.EmailInput(attrs={'class': 'form-control custom-border-radius'}),
+            'table_capacity': forms.Select(attrs={'class': 'form-control custom-border-radius'}),
+            'table_date': forms.DateInput(attrs={'type': 'date', 'class': 'form-control custom-border-radius'}),
+            'table_time': forms.TimeInput(attrs={'type': 'time', 'class': 'form-control custom-border-radius'}),
         }
         labels = {
             'table_name': 'Name',
