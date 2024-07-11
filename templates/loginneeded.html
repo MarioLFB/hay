@@ -2,20 +2,21 @@
 {% block title %}Login needed{% endblock %}
 
 {% block content %}
-<div class="container mt-5 text-bg-light text-center bg-color">
+<div class="container mt-5 text-center bg-color">
 <h1>Please Log In or Sign Up</h1>
 <p>To access this feature, please log in to your account or register if you're new here.</p>
-<p>This helps us secure your information and personalize your experience.</p>
 
-<h3>Already have an account?</h3>
+<h4>Already have an account?</h3>
 <form action="{% url 'login' %}" method="get">
-    <button type="submit" class="btn btn-primary">Login</button>
+    <button type="submit" class="btn  btn-secondary btn-sm custom-border-radius">Login</button>
 </form>
 
-<h3>New user?</h3>
+<div class="mt-3">
+<h4>New user?</h3>
 <form action="{% url 'register' %}" method="get">
-    <button type="submit" class="btn btn-primary">Sign Up</button>
+    <button type="submit" class="btn btn-secondary btn-sm custom-border-radius">Sign Up</button>
 </form>
+</div>
 </div>
 {% endblock %}
 
