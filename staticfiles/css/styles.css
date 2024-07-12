@@ -99,6 +99,18 @@ body {
     box-shadow: none;
 }
 
+.carousel-inner > .item {
+    -webkit-backface-visibility: visible;
+            backface-visibility: visible;
+}
+
+/* Controle the carousel transition to avoid flickering */
+.carousel-item-next{
+    transition: transform 0s ease-in-out;
+  }
+  
+
+
 /* Media Queries */
 
 @media (min-width: 576px) {
