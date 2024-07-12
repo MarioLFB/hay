@@ -26,3 +26,8 @@ $(document).ready(function(){
     $(".contact-container").hide();
     $(".contact-container").fadeIn(2500);
 });
+
+
+
+
+$(".food-1").show("slide", { direction: "left" }, 2500);
