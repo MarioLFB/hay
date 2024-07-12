@@ -15,12 +15,12 @@
         <h1>My Bookings</h1>
     </div>
 
-    <div class="container mt-3">
+    <div class="container mt-3 my-bookings">
         {% if bookings %}
         <div class="row row-cols-1 row-cols-md-2">
             {% for booking in bookings %}
-            <div class="col mb-4">
-                <div class="card custom-border-radius">
+            <div class="col mb-4 mx-auto mt-2">
+                <div class="card custom-border-radius ">
                     <div class="card-body">
                         <h5 class="card-title">{{ booking.table_name }}</h5>
                         <p class="card-text">Phone: {{ booking.table_phone }}</p>

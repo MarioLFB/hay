@@ -2,7 +2,7 @@
 {% block title %}Register{% endblock %}
 
 {% block content %}
-    <div class="container mt-5 d-flex justify-content-center align-items-center bg-color">
+    <div class="container mt-2 d-flex justify-content-center align-items-center bg-color p-5">
         <form action="{% url 'register' %}" method="POST">
             {% csrf_token %}
             <div class="mb-3 text-center">
