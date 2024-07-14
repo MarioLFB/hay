@@ -3,23 +3,32 @@
 
 {% block content %}
 <main>
-    <div class="container mt-5 bg-color text-center">
-        <h2>Profile</h2>
-        <p>Welcome, {{ user.username }}!</p>
-        <p>Your email is: {{ user.email }}</p>
-
-        <h2>If you want access your bookings click <a href="{% url 'mybookings' %}">here</a></h2>
+    <div class="container p-2">
+    <div class="card text-bg-dark text-center m-5 card-size">
+        <div class="card-header text-uppercase">
+            Profile
+        </div>
+        <div class="card-body">
+            <p class="card-tet">Welcome, {{ user.username }}!</p>
+            <p class="card-tet">Your email is: {{ user.email }}</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                Edit your profile
+            </button>
+            <p class="card-title mt-3">If you want access your bookings click</p>
+            <a href="{% url 'mybookings' %}" class="btn btn-light">here</a>
+        </div>
+        <div class="card-footer text-body-secondary">
+        </div>
+      </div>
+    </div>
 
         <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-            Launch static backdrop modal
-        </button>
 
         <!-- Modal -->
         <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="modal-header">
+                    <div class="modal-header bg-dark">
                         <h1 class="modal-title fs-5" id="staticBackdropLabel">Edit Profile</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
@@ -28,11 +37,8 @@
                             {% csrf_token %}
                             {{ form.as_p }}
                             <button type="submit" class="btn btn-primary">Save Changes</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                         </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Understood</button>
                     </div>
                 </div>
             </div>
@@ -40,3 +46,7 @@
     </div>
 </main>
 {% endblock %}
+
+
+
+ 
