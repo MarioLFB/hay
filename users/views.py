@@ -64,17 +64,10 @@ def logout_view(request):
         return redirect('home')
     return render(request, 'logout.html')
 
-@login_required
-def profile(request):
-    bookings = Table.objects.all()  # Consulta para obter todas as reservas
-    context = {
-        'bookings': bookings,
-        'user': request.user  # Se você precisa do usuário também
-    }
-    return render(request, 'profile.html', context)
+
 
 @login_required
-def edit_profile(request):
+def profile(request):
     if request.method == 'POST':
         form = UserRegisterForm(request.POST)
         if form.is_valid():
@@ -94,6 +87,15 @@ def edit_profile(request):
             else:
                 form.add_error('password_confirm', 'Passwords do not match')
     else:
-        form = UserRegisterForm()
+        initial_data = {
+            'username': request.user.username,
+            'email': request.user.email
+        }
+        form = UserRegisterForm(initial=initial_data)
     
-    return render(request, 'edit_profile.html', {'form': form})
+    context = {
+        'user': request.user,
+        'form': form
+    }
+    
+    return render(request, 'profile.html', context)
