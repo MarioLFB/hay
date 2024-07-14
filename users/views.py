@@ -4,6 +4,7 @@ from django.contrib.auth.models import User
 from django.contrib.auth.decorators import login_required
 from .forms import UserLoginForm, UserRegisterForm
 from django.contrib import messages
+from bookings.models import Table
 
 # Create your views here.
 def register(request):
@@ -65,4 +66,34 @@ def logout_view(request):
 
 @login_required
 def profile(request):
-    return render(request, 'profile.html')
+    bookings = Table.objects.all()  # Consulta para obter todas as reservas
+    context = {
+        'bookings': bookings,
+        'user': request.user  # Se você precisa do usuário também
+    }
+    return render(request, 'profile.html', context)
+
+@login_required
+def edit_profile(request):
+    if request.method == 'POST':
+        form = UserRegisterForm(request.POST)
+        if form.is_valid():
+            username = form.cleaned_data['username']
+            email = form.cleaned_data['email']
+            password = form.cleaned_data['password']
+            password_confirm = form.cleaned_data['password_confirm']
+            
+            if password == password_confirm:
+                user = request.user
+                user.username = username
+                user.email = email
+                user.set_password(password)
+                user.save()
+                messages.success(request, 'Profile updated successfully')
+                return redirect('profile')
+            else:
+                form.add_error('password_confirm', 'Passwords do not match')
+    else:
+        form = UserRegisterForm()
+    
+    return render(request, 'edit_profile.html', {'form': form})
