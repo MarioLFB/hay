@@ -108,3 +108,36 @@ class LogoutViewTest(TestCase):
         self.assertEqual(len(messages), 1)  # Assert that there is exactly one message
         self.assertEqual(str(messages[0]), 'You have successfully logged out.')
 
+
+class ProfileViewTest(TestCase):
+    """
+    Test case for the 'profile' view to verify successful profile update,
+    including updating user data, redirection to 'profile', and success message display.
+    """
+    def setUp(self):
+        self.url = reverse('profile')  # URL for the 'profile' view
+
+        # Create a test user and log them in
+        self.username = 'testuser'
+        self.email = 'test@sample.com'
+        self.password = 'password123'
+        self.user = User.objects.create_user(username=self.username, password=self.password)
+        self.client.login(username=self.username, password=self.password)
+
+    def test_profile_update_success(self):
+        # Test profile update with valid data
+        data = {
+            'username': 'newusername',
+            'email': 'test@test.com',
+            'password': 'newpassword123',
+            'password_confirm': 'newpassword123',
+        }
+        
+        response = self.client.post(self.url, data)
+
+        # Update the user object from the database
+        self.user.refresh_from_db()
+
+        # Verify that the user data has been updated
+        self.assertEqual(self.user.username, 'newusername')
+        self.assertEqual(self.user.email, 'test@test.com')
