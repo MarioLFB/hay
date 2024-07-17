@@ -8,6 +8,9 @@ from bookings.models import Table
 
 # Create your views here.
 def register(request):
+    '''
+    Function to register a new user to the website  
+    '''
     if request.method == 'POST':
         form = UserRegisterForm(request.POST)
         if form.is_valid():
@@ -35,6 +38,9 @@ def register(request):
 
         
 def login_view(request):
+    '''
+    Function to log in a user to the website using their username and password 
+    '''
     error_message = None
     
     if request.method == 'POST':
@@ -58,6 +64,9 @@ def login_view(request):
     
 @login_required
 def logout_view(request):
+    '''
+    Function to log out a user from the website 
+    '''
     if request.method == 'POST':
         logout(request)
         messages.success(request, 'You have successfully logged out.')
@@ -68,6 +77,9 @@ def logout_view(request):
 
 @login_required
 def profile(request):
+    '''
+    Function to display the profile page of the user and allow them to update their profile 
+    '''
     if request.method == 'POST':
         form = UserRegisterForm(request.POST)
         if form.is_valid():

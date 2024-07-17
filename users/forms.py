@@ -4,10 +4,16 @@ from django.core.exceptions import ValidationError
 from django.utils.translation import gettext_lazy as _
 
 class UserLoginForm(forms.Form):
+    '''
+    Form to log in a user to the website using their username and password
+    '''
     username = forms.CharField(label='Username', max_length=100, widget=forms.TextInput(attrs={'class': 'form-control custom-border-radius', 'placeholder': 'Username'}))
     password = forms.CharField(label='Password', widget=forms.PasswordInput(attrs={'class': 'form-control custom-border-radius', 'placeholder': 'Password'}))
 
 class UserRegisterForm(forms.Form):
+    '''
+    Form to register a user to the website using their username, email and password
+    '''
     username = forms.CharField(label='Username', max_length=100, widget=forms.TextInput(attrs={'class': 'form-control custom-border-radius', 'placeholder': 'Username'}))
     email = forms.EmailField(label='Email', widget=forms.EmailInput(attrs={'class': 'form-control custom-border-radius', 'placeholder': 'Email'}))
     password = forms.CharField(label='Password', widget=forms.PasswordInput(attrs={'class': 'form-control custom-border-radius', 'placeholder': 'Password'}))

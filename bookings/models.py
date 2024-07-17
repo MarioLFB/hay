@@ -5,6 +5,9 @@ from datetime import date
 # Create your models here.
 
 class Table(models.Model):
+    '''
+    Model for the Table, used for booking a table
+    '''
     table_name = models.CharField(max_length=100)
     table_phone = models.CharField(max_length=100, default='+44 20 7123 4567')
     table_email = models.EmailField(default='email@email.com')

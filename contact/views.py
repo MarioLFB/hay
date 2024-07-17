@@ -4,6 +4,9 @@ from .forms import ContactForm
 # Create your views here.
 
 def contact(request):
+    '''
+    Function to display the contact form
+    '''
     if request.method == 'POST':
         form = ContactForm(request.POST)
         if form.is_valid():
@@ -14,4 +17,7 @@ def contact(request):
     return render(request, 'contact/contact.html', {'form': form})
 
 def message_sent(request):
+    '''
+    Function to display a message to the user that their message was sent successfully
+    '''
     return render(request, 'contact/message_sent.html')

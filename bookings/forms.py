@@ -2,6 +2,9 @@ from django import forms
 from .models import Table
 
 class TableForm(forms.ModelForm):
+    '''
+    Form for the Table model, used for booking a table
+    '''
     table_capacity = forms.ChoiceField(choices=[(i, i) for i in range(1, 11)], label='Number of people')
 
     class Meta:

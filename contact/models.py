@@ -6,6 +6,9 @@ from django.core.exceptions import ValidationError
 # Create your models here.
 
 class ContactMessage(models.Model):
+    '''
+    Class to create a model for the contact message
+    '''
     name = models.CharField(max_length=100)
     email = models.EmailField()
     message = models.TextField()
@@ -19,7 +22,6 @@ class ContactMessage(models.Model):
     def save(self, *args, **kwargs):
         self.full_clean()
         super().save(*args, **kwargs)
-
 
 
     def __str__(self):
