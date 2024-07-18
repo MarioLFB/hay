@@ -9,9 +9,60 @@
 💻 [Visit live website](https://hay-project-ddcf084b85ed.herokuapp.com/)  
 (Ctrl + click to open in new tab)
 
-## Introduction
+## Table of Contents
+  - [Introduction](#Introduction)
+  - [User Goals](#user-goals)
+  - [Site Owner Goals](#site-owner-goals)
+  - [User Experience](#user-experience)
+  - [User Stories](#user-stories)
+  - [Design](#design)
+    - [Colours](#colours)
+    - [Fonts](#fonts)
+    - [Structure](#structure)
+      - [Website pages](#website-pages)
+      - [Database](#database)
+    - [Wireframes](#wireframes)
+  - [Technologies Used](#technologies-used)
+  - [Features](#features)
+  - [Validation](#validation)
+  - [Testing](#testing)
+    - [Manual testing](#manual-testing)
+    - [Automated testing](#automated-testing)
+    - [Tests on various devices](#tests-on-various-devices)
+    - [Browser compatibility](#browser-compatibility)
+  - [Bugs](#bugs)
+  - [Heroku Deployment](#heroku-deployment)
+  - [Credits](#credits)
+  - [Acknowledgements](#acknowledgements)
 
+## Introduction
 H.A.Y is the website of a Steak House restaurant. The site provides users with a clear visual experience and easy access to information and tools, such as: a food and drinks menu, individualized table booking for registered users, where they can update and delete their reservations. The site also allows users to contact the admin through the contact page, which includes the restaurant's information such as address, phone number, and email. Users have a personalized experience since registration is required to access the exclusive reservation area, as well as for login and logout purposes. Once the user registration is completed, users can access their personal page where they can update their registered information.
+
+### User Goals
+- To create a table booking.
+- To be able to view, edit, and cancel bookings.
+- To view menus and contact information.
+
+### Site Owner Goals
+- To provide a solution that allows users to book a table online.
+- To attract more users with a well-crafted site.
+- To provide a modern application with easy navigation.
+- To ensure the site is fully responsive and accessible.
+
+## User Experience
+
+### Target Audience
+- Users who wish to book a table for a meal or a party with family and friends.
+- Past and new customers of the business.
+- Fans visiting the area for a events.
+- People in the area looking to eat and drink after work.
+
+### User Requirements and Expectations
+- Fully responsive design.
+- Accessibility for all users.
+- A welcoming and aesthetically pleasing design.
+- Integration with social media(Instagram).
+- Clear and accessible contact information.
 
 
 ### User Stories
