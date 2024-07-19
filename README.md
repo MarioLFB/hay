@@ -132,16 +132,16 @@ The site is developed with a responsive template for all types of screens. The h
 </details>
 
 ##### Bookings Model
-table_name
-table_phone
-table_email
-table_capacity
-table_date
-table_time
-user
+- table_name
+- table_phone
+- table_email
+- table_capacity
+- table_date
+- table_time
+- user
 
 ##### Contact Model
-name
-email 
-message
-created_at
+- name
+- email 
+- message
+- created_at
