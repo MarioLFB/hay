@@ -97,3 +97,47 @@ As a returning user, I want to book new reservations easily so that I can plan m
 As a returning user, I want to access the menu quickly so that I can decide what to order.
 As a returning user, I want to contact the admin if needed so that I can get assistance or provide feedback.
 As a returning user, I want to see any new updates or changes to the restaurant so that I am informed about new offerings or events.
+
+
+## Design
+
+### Colours
+The website is designed using dark colors, with a carousel of restaurant photos as the background.
+
+
+### Fonts
+The chosen fonts were sourced from Google Fonts, with Electrolize as the primary font and sans-serif as the fallback option.
+
+### Structure
+
+#### Website pages
+The site is developed with a responsive template for all types of screens. The homepage features a navigation bar for easy access. The Home page provides a visual experience with photos of the restaurant, while the footer is minimalist, containing only a direct link to the establishment's social media (Instagram).
+
+- Home page: The Home page features a photo carousel as the background, providing a visual experience of the restaurant. It includes a responsive logo and navigation bar for easy access, and a minimalist footer containing only a link to the restaurant's social media (Instagram).
+- Menu page: The Menu page is divided into two tabs: Food and Drinks, each providing detailed information about the restaurant's offerings. This structure allows users to easily browse the available menu items.
+- Bookings page: The Bookings page requires users to log in. Once logged in, users fill out a form to book a table and are then directed to the My Bookings page, where they can delete or update their reservation. If a user chooses to delete a reservation, they are taken to a confirmation page beforehand.
+- Contact page: The Contact page connects users with the admin. It includes a contact form and provides essential information about the restaurant's location, such as a map, address, phone number, and email, making it easy for users to get in touch.
+- Profile page: The Profile page allows users to edit their registration details, including Username, Email, and Password. It also provides a link for users to access and manage their reservations, ensuring their information is always up to date.
+- Sign Up page: The Sign Up page offers users a straightforward registration process, enabling them to access the booking and profile tools. This ensures that users have a personalized experience on the site.
+- Login/Logout page: The Login/Logout page secures user data by ensuring that only the registered user can access their information. This feature protects user privacy and maintains the security of personal data entered on the site.
+- 404 error page to display if a 404 error is raised
+
+#### Database
+
+- Developed using Python and the Django framework, with a PostgreSQL database for the production version hosted on Heroku.
+- Bookings Model and Contact Model shows all the fields stored in the database
+
+##### Bookings Model
+table_name
+table_phone
+table_email
+table_capacity
+table_date
+table_time
+user
+
+##### Contact Model
+name
+email 
+message
+created_at
