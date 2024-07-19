@@ -127,6 +127,10 @@ The site is developed with a responsive template for all types of screens. The h
 - Developed using Python and the Django framework, with a PostgreSQL database for the production version hosted on Heroku.
 - Bookings Model and Contact Model shows all the fields stored in the database
 
+<details><summary>Show diagram</summary>
+<img src="static\images\images_readme\data_base_diagram.png">
+</details>
+
 ##### Bookings Model
 table_name
 table_phone
