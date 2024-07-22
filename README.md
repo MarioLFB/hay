@@ -225,3 +225,13 @@ The site is developed with a responsive template for all types of screens. The h
 
 <img src="staticfiles\images\images_readme\Features\navbar_responsive.png">
 </details>
+
+
+### Footer
+- Contains a link to the restaurant's Instagram
+- Displayed only on the Homepage
+
+<details><summary>Responsiveness</summary>
+
+<img src="staticfiles\images\images_readme\Features\navbar_responsive.png">
+</details>
