@@ -201,7 +201,7 @@ The site is developed with a responsive template for all types of screens. The h
 
 <details><summary>Home Page</summary>
 
-![Home page](docs/features/feature-homepage.PNG)
+<img src="docs/features/feature-homepage.PNG">
 </details>
 
 ### Logo and Navigation
@@ -213,15 +213,15 @@ The site is developed with a responsive template for all types of screens. The h
 
 <details><summary>Logo</summary>
 
-![Home page](staticfiles\images\images_readme\Features\logo.png)
+<img src="staticfiles\images\images_readme\Features\logo.png">
 </details>
 
 <details><summary>Nav Bar</summary>
 
-![Home page](staticfiles\images\images_readme\Features\navbar.png)
+<img src="staticfiles\images\images_readme\Features\navbar.png">
 </details>
 
 <details><summary>Responsiveness</summary>
 
-![Home page](staticfiles\images\images_readme\Features\navbar_responsive.png)
+<img src="staticfiles\images\images_readme\Features\navbar_responsive.png">
 </details>
