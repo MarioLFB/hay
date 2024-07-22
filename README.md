@@ -233,5 +233,5 @@ The site is developed with a responsive template for all types of screens. The h
 
 <details><summary>Footer</summary>
 
-<img src="static\images\images_readme\Features\footer.png">
+<img src="staticfiles\images\images_readme\Features\footer.png">
 </details>
