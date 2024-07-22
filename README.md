@@ -164,3 +164,13 @@ The site is developed with a responsive template for all types of screens. The h
 - email 
 - message
 - created_at
+
+
+## Technologies Used
+
+### Languages & Frameworks
+- HTML
+- CSS / Bootstrap
+- Javascript / JQuery
+- Python
+- Django
