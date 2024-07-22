@@ -105,6 +105,10 @@ H.A.Y is the website of a Steak House restaurant. The site provides users with a
 <img src="staticfiles\images\images_readme\agile\sample_user_story.png">
 </details>
 
+<details><summary>User Stories</summary>
+<img src="staticfiles\images\images_readme\agile\user_stories.png">
+</details>
+
 <details><summary>Milestones</summary>
 <img src="staticfiles\images\images_readme\agile\milestones.png">
 </details>
