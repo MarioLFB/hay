@@ -226,7 +226,6 @@ The site is developed with a responsive template for all types of screens. The h
 <img src="staticfiles\images\images_readme\Features\navbar_responsive.png">
 </details>
 
-
 ### Footer
 - Contains a link to the restaurant's Instagram
 - Displayed only on the Homepage
@@ -235,3 +234,13 @@ The site is developed with a responsive template for all types of screens. The h
 
 <img src="staticfiles\images\images_readme\Features\footer.png">
 </details>
+
+### Sign up / Register
+- Enable users to create an account
+- Username, password and email are required
+
+<details><summary>Sign up</summary>
+
+<img src="staticfiles\images\images_readme\Features\sign_up.png">
+</details>
+
