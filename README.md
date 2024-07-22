@@ -68,35 +68,50 @@ H.A.Y is the website of a Steak House restaurant. The site provides users with a
 ### User Stories
 
 #### As a user...
-As a user I can sign up so that I have access to login 
-As a user I can login  so that I have access to booking 
-As a user I can logout so that I leave the site securely 
-As a user I can edit my details so that I keep my details updated 
-As a user I can send message so that  I contact the admin 
-As a user, I can access contact so that I find details about the restaurant  
-As a user, I can book a reservation so that I secure my desired time, date, and number of people 
-As a user, I can access a reservation so that I update or delete it if needed 
-As a user, I can access menu page so that I see food and drink menu 
-As a user, I can navigate the home page easily so that I access the navbar 
+1. As a user I can sign up so that I have access to login 
+2. As a user I can login  so that I have access to booking 
+3. As a user I can logout so that I leave the site securely 
+4. As a user I can edit my details so that I keep my details updated 
+5. As a user I can send message so that  I contact the admin 
+6. As a user, I can access contact so that I find details about the restaurant  
+7. As a user, I can book a reservation so that I secure my desired time, date, and number of people 
+8. As a user, I can access a reservation so that I update or delete it if needed 
+9. As a user, I can access menu page so that I see food and drink menu 
+10. As a user, I can navigate the home page easily so that I access the navbar 
 
 #### Site Owner
-As the site owner, I want users to easily navigate the site so that they have a seamless experience.
-As the site owner, I want users to be able to register and login so that they can access exclusive features.
-As the site owner, I want users to be able to book and manage reservations so that they can plan their visits.
-As the site owner, I want users to be able to contact the admin easily so that they can get support and information.
-As the site owner, I want to update the menu page regularly so that users see the latest offerings.
-As the site owner, I want to manage user accounts so that I can ensure the security and accuracy of user information.
-As the site owner, I want to receive messages from users so that I can address their inquiries and feedback.
-As the site owner, I want to track user activity so that I can improve the site and services based on user behavior.
+11. As the site owner, I want users to easily navigate the site so that they have a seamless experience.
+12. As the site owner, I want users to be able to register and login so that they can access exclusive features.
+13. As the site owner, I want users to be able to book and manage reservations so that they can plan their visits.
+14. As the site owner, I want users to be able to contact the admin easily so that they can get support and information.
+15. As the site owner, I want to update the menu page regularly so that users see the latest offerings.
+16. As the site owner, I want to manage user accounts so that I can ensure the security and accuracy of user information.
+17. As the site owner, I want to receive messages from users so that I can address their inquiries and feedback.
+18. As the site owner, I want to track user activity so that I can improve the site and services based on user behavior.
 
 #### Returning User
-As a returning user, I want to login easily so that I can quickly access my account and reservations.
-As a returning user, I want to see my past reservations so that I can review my booking history.
-As a returning user, I want to update my details so that my profile information is current.
-As a returning user, I want to book new reservations easily so that I can plan my next visit.
-As a returning user, I want to access the menu quickly so that I can decide what to order.
-As a returning user, I want to contact the admin if needed so that I can get assistance or provide feedback.
-As a returning user, I want to see any new updates or changes to the restaurant so that I am informed about new offerings or events.
+19. As a returning user, I want to login easily so that I can quickly access my account and reservations.
+20. As a returning user, I want to see my past reservations so that I can review my booking history.
+21. As a returning user, I want to update my details so that my profile information is current.
+22. As a returning user, I want to book new reservations easily so that I can plan my next visit.
+23. As a returning user, I want to access the menu quickly so that I can decide what to order.
+24. As a returning user, I want to contact the admin if needed so that I can get assistance or provide feedback.
+25. As a returning user, I want to see any new updates or changes to the restaurant so that I am informed about new offerings or events.
+
+### Milestones, Epics, and User Stories (Acceptance Criteria and tasks)
+- The project followed the agile framework, using Milestones to mark significant checkpoints, Epics to organize large blocks of work, and User Stories to detail specific functionalities (Acceptance Criteria and tasks).
+
+<details><summary>Epics, Acceptance Criteria and Task</summary>
+<img src="staticfiles\images\images_readme\agile\sample_user_story.png">
+</details>
+
+<details><summary>Milestones</summary>
+<img src="staticfiles\images\images_readme\agile\milestones.png">
+</details>
+
+<details><summary>Agile Progress</summary>
+<img src="staticfiles\images\images_readme\agile\agile_progress.png">
+</details>
 
 
 ## Design
