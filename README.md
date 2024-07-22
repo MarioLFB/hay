@@ -193,3 +193,35 @@ The site is developed with a responsive template for all types of screens. The h
   - [Pycodestyle(PEP8)](https://pypi.org/project/pycodestyle/)
   - [Lighthouse](https://developers.google.com/web/tools/lighthouse/)
   - [Wave Validator](https://wave.webaim.org/)
+
+## Features
+
+### Home page
+- Homepage includes a navigation bar, main body (automatic image slideshow), and a footer (link to Instagram).
+
+<details><summary>Home Page</summary>
+
+![Home page](docs/features/feature-homepage.PNG)
+</details>
+
+### Logo and Navigation
+- Custom logo designed for the business
+- Fully responsive design
+- Switches to a hamburger menu on smaller screens
+- Displays login/logout status
+- Present on all pages
+
+<details><summary>Logo</summary>
+
+![Home page](staticfiles\images\images_readme\Features\logo.png)
+</details>
+
+<details><summary>Nav Bar</summary>
+
+![Home page](staticfiles\images\images_readme\Features\navbar.png)
+</details>
+
+<details><summary>Responsiveness</summary>
+
+![Home page](staticfiles\images\images_readme\Features\navbar_responsive.png)
+</details>
