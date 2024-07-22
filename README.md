@@ -244,3 +244,20 @@ The site is developed with a responsive template for all types of screens. The h
 <img src="staticfiles\images\images_readme\Features\sign_up.png">
 </details>
 
+### Login
+- Users can log in and out, and access their user area, where they can view their profile page to update their information and find a link to the booking page.
+
+<details><summary>Login</summary>
+
+<img src="staticfiles\images\images_readme\Features\login.png">
+</details>
+
+<details><summary>Logout</summary>
+
+<img src="staticfiles\images\images_readme\Features\logout.png">
+</details>
+
+<details><summary>Profile</summary>
+
+<img src="staticfiles\images\images_readme\Features\profile.png">
+</details>
