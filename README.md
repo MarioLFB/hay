@@ -201,7 +201,7 @@ The site is developed with a responsive template for all types of screens. The h
 
 <details><summary>Home Page</summary>
 
-<img src="docs/features/feature-homepage.PNG">
+<img src="staticfiles\images\images_readme\Features\home.png">
 </details>
 
 ### Logo and Navigation
