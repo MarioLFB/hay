@@ -289,5 +289,5 @@ The site is developed with a responsive template for all types of screens. The h
 
 <details><summary>My Bookings</summary>
 
-<img src="staticfiles\images\images_readme\Features\bookings.png">
+<img src="staticfiles\images\images_readme\Features\my_bookings.png">
 </details>
