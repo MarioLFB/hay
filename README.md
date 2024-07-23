@@ -265,6 +265,7 @@ The site is developed with a responsive template for all types of screens. The h
 ### Contact
 - The Contact page provides any user (registered or not/logged in or not) the ability to get in touch with the Admin. 
 - The Contact page also includes a map, address, phone number, and contact email.
+- Admin has access to messages through the site's Admin panel
 
 <details><summary>Contact</summary>
 
