@@ -291,3 +291,21 @@ The site is developed with a responsive template for all types of screens. The h
 
 <img src="staticfiles\images\images_readme\Features\my_bookings.png">
 </details>
+
+### Edit Bookings
+- The Edit Bookings page allows users to modify their existing reservation details.
+- Users can update the number of people, name, phone number, email, date, and time of the booking.
+
+<details><summary>Edit Bookings</summary>
+
+<img src="staticfiles\images\images_readme\Features\edit_bookings.png">
+</details>
+
+### Menu
+- Contains two tabs: Food and Drinks.
+- Accessible to any user, even without login or registration.
+
+<details><summary>Menu</summary>
+
+<img src="staticfiles\images\images_readme\Features\menu.png">
+</details>
