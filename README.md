@@ -261,3 +261,33 @@ The site is developed with a responsive template for all types of screens. The h
 
 <img src="staticfiles\images\images_readme\Features\profile.png">
 </details>
+
+### Contact
+- The Contact page provides any user (registered or not/logged in or not) the ability to get in touch with the Admin. 
+- The Contact page also includes a map, address, phone number, and contact email.
+
+<details><summary>Contact</summary>
+
+<img src="staticfiles\images\images_readme\Features\contact.png">
+</details>
+
+### Bookings
+- The Bookings page allows users to make reservations by providing details such as the number of people, name, phone number, email, date, and time.
+- Users can view and manage their bookings.
+- The page features two buttons: "Book" for making a new reservation and "My Bookings" to review existing ones.
+
+<details><summary>Bookings</summary>
+
+<img src="staticfiles\images\images_readme\Features\bookings.png">
+</details>
+
+### My Bookings
+- The My Bookings page allows users to view their current reservations. 
+- If no bookings are found, the page displays: "You have no bookings yet. Click here to make a booking."
+- If bookings exist, details such as name, phone number, email, capacity, date, and time are shown.
+- Users can manage their bookings with "Delete" and "Update" buttons.
+
+<details><summary>My Bookings</summary>
+
+<img src="staticfiles\images\images_readme\Features\bookings.png">
+</details>

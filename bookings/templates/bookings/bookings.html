@@ -2,7 +2,7 @@
 {% block title %}Book{% endblock %}
 
 {% block content %}
-<div class="container mt-3 bg-color p-3 text-center">
+<div class="container mt-5 bg-color p-5 text-center bg-dark">
     <form method="POST">
         {% csrf_token %}
         {{ form.as_p }}
