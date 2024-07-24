@@ -1,42 +1,42 @@
-
 {% extends 'base.html' %}
 {% block title %}Drinks{% endblock %}
 
 {% block content %}
 <div class="nav justify-content-center mt-3 d-flex align-items-center menu-navbar">
-    <li class="nav-item">
-        <a class="nav-link menulink" href="{% url 'menu' %}">Food</a>
-    </li>
-    <li class="nav-item">
-        <span class="divider">|</span>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link menulink" href="{% url 'drinks' %}">Drinks</a>
-    </li>
-    </div>
+    <ul class="nav">
+        <li class="nav-item">
+            <a class="nav-link menulink" href="{% url 'menu' %}">Food</a>
+        </li>
+        <li class="nav-item">
+            <span class="divider">|</span>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link menulink" href="{% url 'drinks' %}">Drinks</a>
+        </li>
+    </ul>
+</div>
 
-    <div class="container text-center mt-4">
-        <div class="food-menu row">
-            <div class="col-12mb-4 mt-4 mb-5">
-                <p class="mb-1">Virgin Mojito - Mint, lime juice, soda water. - 5.99</p>
-                <p class="mb-1">Virgin Piña Colada - Coconut cream, pineapple juice. - 6.99</p>
-                <p class="mb-1">Shirley Temple - Ginger ale, grenadine, cherry. - 4.99</p>
-                <p class="mb-1">Arnold Palmer - Iced tea, lemonade. - 3.99</p>
-            </div>
-            <div class="col-12 mb-5">
-                <p class="mb-1">Margarita - Tequila, triple sec, lime juice. - 9.99</p>
-                <p class="mb-1">Piña Colada - Rum, coconut cream, pineapple juice. - 8.99</p>
-                <p class="mb-1">Mojito - Rum, mint, lime juice, soda water. - 10.99</p>
-                <p class="mb-1">Moscow Mule - Vodka, ginger beer, lime juice. - 11.99</p>
-            </div>
-            <div class="col-12 mb-5">
-                <p class="mb-1">Mineral Water - 2.99</p>
-                <p class="mb-1">Soft Drinks - 3.99</p>
-                <p class="mb-1">Fresh Juice - 4.99</p>
-                <p class="mb-1">Lemonade - 3.99</p>
-            </div>
-            
+<div class="container text-center mt-4">
+    <div class="food-menu row">
+        <div class="col-12 mb-4 mt-4 mb-5">
+            <p class="mb-1">Virgin Mojito - Mint, lime juice, soda water. - 5.99</p>
+            <p class="mb-1">Virgin Piña Colada - Coconut cream, pineapple juice. - 6.99</p>
+            <p class="mb-1">Shirley Temple - Ginger ale, grenadine, cherry. - 4.99</p>
+            <p class="mb-1">Arnold Palmer - Iced tea, lemonade. - 3.99</p>
+        </div>
+        <div class="col-12 mb-5">
+            <p class="mb-1">Margarita - Tequila, triple sec, lime juice. - 9.99</p>
+            <p class="mb-1">Piña Colada - Rum, coconut cream, pineapple juice. - 8.99</p>
+            <p class="mb-1">Mojito - Rum, mint, lime juice, soda water. - 10.99</p>
+            <p class="mb-1">Moscow Mule - Vodka, ginger beer, lime juice. - 11.99</p>
+        </div>
+        <div class="col-12 mb-5">
+            <p class="mb-1">Mineral Water - 2.99</p>
+            <p class="mb-1">Soft Drinks - 3.99</p>
+            <p class="mb-1">Fresh Juice - 4.99</p>
+            <p class="mb-1">Lemonade - 3.99</p>
         </div>
     </div>
+</div>
 
 {% endblock %}
