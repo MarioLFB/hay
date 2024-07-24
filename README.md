@@ -332,6 +332,10 @@ The W3C Markup Validation Service
 <img src="">
 </details>
 
+<details><summary>Register(Sign up)</summary>
+<img src="staticfiles\images\images_readme\validation\w3\w3_register.png">
+</details>
+
 <details><summary>Bookings</summary>
 <img src="">
 </details>
@@ -344,21 +348,6 @@ The W3C Markup Validation Service
 <img src="">
 </details>
 
-<details><summary>Food Menu</summary>
-<img src="">
-</details>
-
-<details><summary>Drinks Menu</summary>
-<img src="">
-</details>
-
-<details><summary>Blog</summary>
-<img src="">
-</details>
-
-<details><summary>Blog Expanded</summary>
-<img src="">
-</details>
 
 <details><summary>Contact Us</summary>
 <img src="">
