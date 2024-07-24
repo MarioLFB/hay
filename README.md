@@ -319,8 +319,9 @@ The W3C Markup Validation Service
 <img src="staticfiles\images\images_readme\validation\w3\w3_home.png">
 </details>
 
-<details><summary>Menu</summary>
-<img src="">
+<details><summary>Menu and Drinks</summary>
+<img src="staticfiles\images\images_readme\validation\w3\w3_menu.png">
+<img src="staticfiles\images\images_readme\validation\w3\w3_drinks.png">
 </details>
 
 <details><summary>Login</summary>
