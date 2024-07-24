@@ -360,3 +360,10 @@ The W3C Markup Validation Service
 <details><summary>404</summary>
 <img src="">
 </details><hr>
+
+### CSS Validation
+The W3C Jigsaw CSS Validation Service
+
+<details><summary>Style.css</summary>
+<img src="staticfiles\images\images_readme\validation\w3\w3c_css.png">
+</details><hr>
