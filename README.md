@@ -310,3 +310,63 @@ The site is developed with a responsive template for all types of screens. The h
 
 <img src="staticfiles\images\images_readme\Features\menu.png">
 </details>
+
+
+## Validation
+
+The W3C Markup Validation Service
+<details><summary>Home</summary>
+<img src="">
+</details>
+
+<details><summary>Register</summary>
+<img src="">
+</details>
+
+<details><summary>Login</summary>
+<img src="">
+</details>
+
+<details><summary>Logout</summary>
+<img src="">
+</details>
+
+<details><summary>Bookings</summary>
+<img src="">
+</details>
+
+<details><summary>Edit Booking</summary>
+<img src="">
+</details>
+
+<details><summary>Cancel Booking</summary>
+<img src="">
+</details>
+
+<details><summary>Food Menu</summary>
+<img src="">
+</details>
+
+<details><summary>Drinks Menu</summary>
+<img src="">
+</details>
+
+<details><summary>Blog</summary>
+<img src="">
+</details>
+
+<details><summary>Blog Expanded</summary>
+<img src="">
+</details>
+
+<details><summary>Contact Us</summary>
+<img src="">
+</details>
+
+<details><summary>Confirmed</summary>
+<img src="">
+</details>
+
+<details><summary>404</summary>
+<img src="">
+</details><hr>
