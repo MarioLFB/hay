@@ -316,10 +316,10 @@ The site is developed with a responsive template for all types of screens. The h
 
 The W3C Markup Validation Service
 <details><summary>Home</summary>
-<img src="">
+<img src="staticfiles\images\images_readme\validation\w3\w3_home.png">
 </details>
 
-<details><summary>Register</summary>
+<details><summary>Menu</summary>
 <img src="">
 </details>
 
