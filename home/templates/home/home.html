@@ -1,22 +1,21 @@
-
 {% extends 'base.html' %}
+
 {% block title %}Home{% endblock %}
 
 {% block content %}
-{% for message in messages%}
-<div class="container">
-<div class="alert alert-success" role="alert" id="success-message">
-    {{ message }}
-</div>
-</div>
-{% endfor %}
-
-<div class="container fixed-bottom">
-    <footer class="text-center p-3">
-        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-        <i class="fa-brands fa-instagram fa-lg icon" aria-hidden="true"></i>
-        </a>
-    </footer>
+  {% for message in messages %}
+  <div class="container">
+    <div class="alert alert-success" role="alert" id="success-message">
+      {{ message }}
     </div>
+  </div>
+  {% endfor %}
 
+  <div class="container fixed-bottom">
+    <footer class="text-center p-3">
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-instagram fa-lg icon" aria-hidden="true"></i>
+      </a>
+    </footer>
+  </div>
 {% endblock %}
