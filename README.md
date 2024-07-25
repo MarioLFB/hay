@@ -360,7 +360,7 @@ The W3C Markup Validation Service
 <img src="staticfiles\images\images_readme\validation\w3\w3_login.png">
 </details>
 
-<details><summary>Logou</summary>
+<details><summary>Logout</summary>
 <img src="staticfiles\images\images_readme\validation\w3\w3_logout.png">
 </details><hr>
 
