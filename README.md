@@ -362,7 +362,7 @@ The W3C Markup Validation Service
 
 <details><summary>Logout</summary>
 <img src="staticfiles\images\images_readme\validation\w3\w3_logout.png">
-</details><hr>
+</details>
 
 <details><summary>404</summary>
 <img src="staticfiles\images\images_readme\validation\w3\w3_404.png">
