@@ -324,9 +324,27 @@ The W3C Markup Validation Service
 <img src="staticfiles\images\images_readme\validation\w3\w3_drinks.png">
 </details>
 
-<details><summary>Login</summary>
-<img src="">
+<details><summary>Bookings</summary>
+<img src="staticfiles\images\images_readme\validation\w3\w3_bookings.png">
 </details>
+
+<details><summary>My Bookings</summary>
+<img src="staticfiles\images\images_readme\validation\w3\w3_my_bookings.png">
+</details>
+
+<details><summary>Booked</summary>
+<img src="staticfiles\images\images_readme\validation\w3\w3_booked.png">
+</details>
+
+<details><summary>Edit Booking</summary>
+<img src="staticfiles\images\images_readme\validation\w3\w3_my_bookings.png">
+</details>
+
+<details><summary>Delete Bookings</summary>
+<img src="staticfiles\images\images_readme\validation\w3\w3_delete_bookings.png">
+</details>
+
+
 
 <details><summary>Logout</summary>
 <img src="">
