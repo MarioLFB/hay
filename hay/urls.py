@@ -10,3 +10,6 @@ urlpatterns = [
     path('contact/', include('contact.urls')),
     path('accounts/', include('users.urls')),
     ]
+
+
+handler404 = 'home.views.handler404'
