@@ -344,39 +344,24 @@ The W3C Markup Validation Service
 <img src="staticfiles\images\images_readme\validation\w3\w3_delete_bookings.png">
 </details>
 
-
-
-<details><summary>Logout</summary>
-<img src="">
+<details><summary>Contact</summary>
+<img src="staticfiles\images\images_readme\validation\w3\w3_contact.png">
 </details>
 
 <details><summary>Register(Sign up)</summary>
 <img src="staticfiles\images\images_readme\validation\w3\w3_register.png">
 </details>
 
-<details><summary>Bookings</summary>
-<img src="">
+<details><summary>Profile</summary>
+<img src="staticfiles\images\images_readme\validation\w3\w3_profile.png">
 </details>
 
-<details><summary>Edit Booking</summary>
-<img src="">
+<details><summary>Login</summary>
+<img src="staticfiles\images\images_readme\validation\w3\w3_login.png">
 </details>
 
-<details><summary>Cancel Booking</summary>
-<img src="">
-</details>
-
-
-<details><summary>Contact Us</summary>
-<img src="">
-</details>
-
-<details><summary>Confirmed</summary>
-<img src="">
-</details>
-
-<details><summary>404</summary>
-<img src="">
+<details><summary>Logou</summary>
+<img src="staticfiles\images\images_readme\validation\w3\w3_logout.png">
 </details><hr>
 
 ### CSS Validation
