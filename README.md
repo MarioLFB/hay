@@ -364,6 +364,10 @@ The W3C Markup Validation Service
 <img src="staticfiles\images\images_readme\validation\w3\w3_logout.png">
 </details><hr>
 
+<details><summary>404</summary>
+<img src="staticfiles\images\images_readme\validation\w3\w3_404.png">
+</details><hr>
+
 ### CSS Validation
 The W3C Jigsaw CSS Validation Service
 
