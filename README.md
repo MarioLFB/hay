@@ -374,3 +374,11 @@ The W3C Jigsaw CSS Validation Service
 <details><summary>Style.css</summary>
 <img src="staticfiles\images\images_readme\validation\w3\w3c_css.png">
 </details><hr>
+
+### JavaScript Validation
+JSHint JS Validation Service
+
+<details><summary>Script.js</summary>
+<img src="staticfiles\images\images_readme\validation\w3\jshint.png">
+</details><hr>
+
