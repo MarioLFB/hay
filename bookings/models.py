@@ -4,6 +4,7 @@ from django.contrib.auth.models import User
 from datetime import date
 # Create your models here.
 
+
 class Table(models.Model):
     '''
     Model for the Table, used for booking a table
