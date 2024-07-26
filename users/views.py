@@ -6,10 +6,10 @@ from .forms import UserLoginForm, UserRegisterForm
 from django.contrib import messages
 from bookings.models import Table
 
-# Create your views here.
+
 def register(request):
     '''
-    Function to register a new user to the website  
+    Function to register a new user to the website
     '''
     if request.method == 'POST':
         form = UserRegisterForm(request.POST)
@@ -18,39 +18,45 @@ def register(request):
             email = form.cleaned_data['email']
             password = form.cleaned_data['password']
             password_confirm = form.cleaned_data['password_confirm']
-            
+
             if password == password_confirm:
-                
                 if User.objects.filter(username=username).exists():
                     form.add_error('username', 'User already exists')
                 else:
                     # Create a new user
-                    user = User.objects.create_user(username=username, email=email, password=password)
+                    user = User.objects.create_user(
+                        username=username,
+                        email=email,
+                        password=password
+                    )
                     user.save()
-                    messages.success(request, 'You have successfully registered. Please login.')
+                    messages.success(
+                        request,
+                        'You have successfully registered. Please login.'
+                    )
                     return redirect('login')
             else:
                 form.add_error('password_confirm', 'Passwords do not match')
     else:
         form = UserRegisterForm()
-    
+
     return render(request, 'register.html', {'form': form})
 
-        
+
 def login_view(request):
     '''
-    Function to log in a user to the website using their username and password 
+    Function to log in a user to the website using their username and password
     '''
     error_message = None
-    
+
     if request.method == 'POST':
         form = UserLoginForm(request.POST)
         if form.is_valid():
             username = form.cleaned_data['username']
             password = form.cleaned_data['password']
-            
+
             user = authenticate(request, username=username, password=password)
-            
+
             if user is not None:
                 login(request, user)
                 messages.success(request, 'You have successfully logged in.')
@@ -60,12 +66,17 @@ def login_view(request):
     else:
         form = UserLoginForm()
 
-    return render(request, 'login.html', {'form': form, 'error_message': error_message})
-    
+    return render(
+        request,
+        'login.html',
+        {'form': form, 'error_message': error_message}
+    )
+
+
 @login_required
 def logout_view(request):
     '''
-    Function to log out a user from the website 
+    Function to log out a user from the website
     '''
     if request.method == 'POST':
         logout(request)
@@ -74,11 +85,11 @@ def logout_view(request):
     return render(request, 'logout.html')
 
 
-
 @login_required
 def profile(request):
     '''
-    Function to display the profile page of the user and allow them to update their profile 
+    Function to display the profile page of the user
+    and allow them to update their profile
     '''
     if request.method == 'POST':
         form = UserRegisterForm(request.POST)
@@ -87,7 +98,7 @@ def profile(request):
             email = form.cleaned_data['email']
             password = form.cleaned_data['password']
             password_confirm = form.cleaned_data['password_confirm']
-            
+
             if password == password_confirm:
                 user = request.user
                 user.username = username
@@ -104,10 +115,10 @@ def profile(request):
             'email': request.user.email
         }
         form = UserRegisterForm(initial=initial_data)
-    
+
     context = {
         'user': request.user,
         'form': form
     }
-    
+
     return render(request, 'profile.html', context)
