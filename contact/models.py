@@ -5,6 +5,7 @@ from django.core.exceptions import ValidationError
 
 # Create your models here.
 
+
 class ContactMessage(models.Model):
     '''
     Class to create a model for the contact message
@@ -18,11 +19,10 @@ class ContactMessage(models.Model):
         super().clean()
         if not validate_email(self.email):
             raise ValidationError({'email': 'Invalid email format'})
-        
+
     def save(self, *args, **kwargs):
         self.full_clean()
         super().save(*args, **kwargs)
-
 
     def __str__(self):
         return self.name

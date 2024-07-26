@@ -18,6 +18,7 @@ def contact(request):
 
 def message_sent(request):
     '''
-    Function to display a message to the user that their message was sent successfully
+    Function to display a message to the user that their message 
+    was sent successfully
     '''
     return render(request, 'contact/message_sent.html')
