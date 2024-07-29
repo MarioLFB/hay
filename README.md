@@ -405,6 +405,12 @@ All code was verified and found to be error-free.
 #### Views
 <img src="staticfiles\images\images_readme\validation\pep8\bookings\pep8_views_bookings.png">
 
+#### Tests
+<img src="">
+<img src="">
+<img src="">
+
+
 </details>
 
 <details>

@@ -5,16 +5,24 @@ from bookings.models import Table
 
 
 class BookingTableViewTest(TestCase):
-    """Tests for the views in the bookings app, including booking creation, editing, deletion,
+    """Tests for the views in the bookings app,
+    including booking creation, editing, deletion,
     and authentication checks for various user scenarios."""
 
     def setUp(self):
-        """Set up the client and create a test user."""
+        """
+        Set up the client and create a test user.
+        """
         self.client = Client()
-        self.user = User.objects.create_user(username='testuser', password='password')
+        self.user = User.objects.create_user(
+            username='testuser',
+            password='password'
+        )
 
     def test_booking_table_authenticated_user(self):
-        """Test booking table for an authenticated user."""
+        """
+        Test booking table for an authenticated user.
+        """
         self.client.login(username='testuser', password='password')
         response = self.client.post(reverse('bookings'))
         self.assertEqual(response.status_code, 200)
