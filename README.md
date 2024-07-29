@@ -431,9 +431,9 @@ All code was verified and found to be error-free.
 <img src="staticfiles\images\images_readme\validation\pep8\contact\pep8_views_contact.png">
 
 #### Tests
-<img src="staticfiels\images\images_readme\validation\pep8\contact\pep8_test_contact_forms.png">
-<img src="staticfiels\images\images_readme\validation\pep8\contact\pep8_test_contact_models.png">
-<img src="staticfiels\images\images_readme\validation\pep8\contact\pep8_test_contact_views.png">
+<img src="staticfiles\images\images_readme\validation\pep8\contact\pep8_test_contact_forms.png">
+<img src="staticfiles\images\images_readme\validation\pep8\contact\pep8_test_contact_models.png">
+<img src="staticfiles\images\images_readme\validation\pep8\contact\pep8_test_contact_views.png">
 
 </details>
 
