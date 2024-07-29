@@ -471,6 +471,10 @@ All code was verified and found to be error-free.
 #### Views
 <img src="staticfiles\images\images_readme\validation\pep8\users\pep8__views_users.png">
 
+#### Tests
+<img src="staticfiles\images\images_readme\validation\pep8\users\pep8_test_users_forms.png">
+<img src="staticfiles\images\images_readme\validation\pep8\users\pep8_test_users_views.png">
+
 </details>
 
 
