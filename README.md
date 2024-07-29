@@ -477,4 +477,13 @@ All code was verified and found to be error-free.
 
 </details>
 
+### Lighthouse
+
+Lighthouse was used to evaluate performance, best practices, and SEO.
+
+#### Desktop
+<details><summary>Home</summary>
+<img src="">
+</details>
+
 
