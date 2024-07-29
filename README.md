@@ -406,10 +406,9 @@ All code was verified and found to be error-free.
 <img src="staticfiles\images\images_readme\validation\pep8\bookings\pep8_views_bookings.png">
 
 #### Tests
-<img src="">
-<img src="">
-<img src="">
-
+<img src="static\images\images_readme\validation\pep8\bookings\pep8_test_bookings_forms.png">
+<img src="static\images\images_readme\validation\pep8\bookings\pep8_test_bookings_models.png">
+<img src="static\images\images_readme\validation\pep8\bookings\pep8_test_bookings_views.png">
 
 </details>
 
@@ -430,6 +429,11 @@ All code was verified and found to be error-free.
 
 #### Views
 <img src="staticfiles\images\images_readme\validation\pep8\contact\pep8_views_contact.png">
+
+#### Tests
+<img src="static\images\images_readme\validation\pep8\bookings\pep8_test_bookings_forms.png">
+<img src="static\images\images_readme\validation\pep8\bookings\pep8_test_bookings_models.png">
+<img src="static\images\images_readme\validation\pep8\bookings\pep8_test_bookings_views.png">
 
 </details>
 

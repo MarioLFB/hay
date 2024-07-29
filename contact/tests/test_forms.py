@@ -1,9 +1,11 @@
 from django.test import TestCase
 from contact.forms import ContactForm
 
+
 class ContactFormTest(TestCase):
     """
-    Test cases for ContactForm to validate form validation and saving functionality.
+    Test cases for ContactForm to validate
+    form validation and saving functionality.
     """
     def test_valid_form(self):
         # Validates a valid ContactForm instance.
@@ -38,4 +40,7 @@ class ContactFormTest(TestCase):
         contact_message = form.save()
         self.assertEqual(contact_message.name, 'John Doe')
         self.assertEqual(contact_message.email, 'johndoe@example.com')
-        self.assertEqual(contact_message.message, 'Hello, this is a test message.')
+        self.assertEqual(
+            contact_message.message,
+            'Hello, this is a test message.'
+        )

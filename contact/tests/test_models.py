@@ -2,9 +2,11 @@ from django.test import TestCase
 from django.core.exceptions import ValidationError
 from contact.models import ContactMessage
 
+
 class ContactMessageModelTest(TestCase):
     """
-    Test case for ContactMessage model to validate its attributes and behavior.
+    Test case for ContactMessage model to
+    validate its attributes and behavior.
     """
     def setUp(self):
         # Setup run before every test method.
@@ -31,4 +33,3 @@ class ContactMessageModelTest(TestCase):
                 email='invalid-email',  # Invalid email format
                 message='Another test message'
             )
-
