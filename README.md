@@ -525,4 +525,7 @@ Lighthouse was used to evaluate performance, best practices, and SEO.
 <img src="staticfiles\images\images_readme\validation\lighthouse\lighthouse_desktop_login.png">
 </details>
 
+### Wave
+WAVE was used to test the websites accessibility.
+
 
