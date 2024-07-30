@@ -482,7 +482,7 @@ All code was verified and found to be error-free.
 Lighthouse was used to evaluate performance, best practices, and SEO.
 
 <details><summary>Home</summary>
-<img src="static\images\images_readme\validation\lighthouse\lighthouse_desktop_home.png">
+<img src="staticfiles\images\images_readme\validation\lighthouse\lighthouse_desktop_home.png">
 </details>
 
 <details><summary>Menu</summary>
