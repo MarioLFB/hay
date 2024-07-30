@@ -481,60 +481,48 @@ All code was verified and found to be error-free.
 
 Lighthouse was used to evaluate performance, best practices, and SEO.
 
-#### Desktop and Mobile
 <details><summary>Home</summary>
 <img src="staticfiles\images\images_readme\validation\lighthouse\Desktop\lighthouse_desktop_home.png">
-<img src="">
 </details>
 
 <details><summary>Menu</summary>
 <img src="staticfiles\images\images_readme\validation\lighthouse\Desktop\lighthouse_desktop_menu.png">
-<img src="">
 </details>
 
 <details><summary>Bookings</summary>
 <img src="staticfiles\images\images_readme\validation\lighthouse\Desktop\lighthouse_desktop_bookings.png">
-<img src="">
 </details>
 
 <details><summary>My Bookings</summary>
 <img src="staticfiles\images\images_readme\validation\lighthouse\Desktop\lighthouse_desktop_mybookings.png">
-<img src="">
 </details>
 
 <details><summary>Delete Bookings</summary>
 <img src="staticfiles\images\images_readme\validation\lighthouse\Desktop\lighthouse_desktop_deletebookings.png">
-<img src="">
 </details>
 
 <details><summary>Booked</summary>
 <img src="staticfiles\images\images_readme\validation\lighthouse\Desktop\lighthouse_desktop_booked.png">
-<img src="">
 </details>
 
 <details><summary>Contact</summary>
 <img src="staticfiles\images\images_readme\validation\lighthouse\Desktop\lighthouse_desktop_contact.png">
-<img src="">
 </details>
 
 <details><summary>Profile</summary>
 <img src="staticfiles\images\images_readme\validation\lighthouse\Desktop\lighthouse_desktop_profile.png">
-<img src="">
 </details>
 
 <details><summary>Logout</summary>
 <img src="staticfiles\images\images_readme\validation\lighthouse\Desktop\lighthouse_desktop_logout.png">
-<img src="">
 </details>
 
 <details><summary>Register</summary>
 <img src="staticfiles\images\images_readme\validation\lighthouse\Desktop\lighthouse_desktop_register.png">
-<img src="">
 </details>
 
 <details><summary>Login</summary>
 <img src="staticfiles\images\images_readme\validation\lighthouse\Desktop\lighthouse_desktop_login.png">
-<img src="">
 </details>
 
 
