@@ -575,3 +575,7 @@ WAVE was used to test the websites accessibility.
 <details><summary>Register</summary>
 <img src="staticfiles\images\images_readme\validation\wave\wave_register.png">
 </details>
+
+<details><summary>404</summary>
+<img src="staticfiles\images\images_readme\validation\wave\wave_404.png">
+</details>
