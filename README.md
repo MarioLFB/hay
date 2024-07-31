@@ -579,3 +579,116 @@ WAVE was used to test the websites accessibility.
 <details><summary>404</summary>
 <img src="staticfiles\images\images_readme\validation\wave\wave_404.png">
 </details>
+
+## Testing
+
+1. Manual testing
+2. Automated testing
+
+### Manual testing
+
+1. As a user I can sign up so that I have access to login 
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+Navigate to the sign-up page | The sign-up page is displayed | Works as expected |
+Fill in the required fields (username, email, password and confirm password) | The fields are filled in correctly with no errors | Works as expected |
+Click the "Sign Up" button | The sign-up is successful, and a confirmation message is displayed | Works as expected |
+Check if the user is redirected to the login page | The user is automatically redirected to the login page | Works as expected |
+
+<details><summary></summary>
+<img src="staticfiles\images\images_readme\tests\manual_test\1\1_sign_up.png">
+<img src="staticfiles\images\images_readme\tests\manual_test\1\1_sign_up_fields.png">
+<img src="staticfiles\images\images_readme\tests\manual_test\1\1_sign_up_button.png">
+<img src="staticfiles\images\images_readme\tests\manual_test\1\1_sign_up_message_login.png">
+</details>
+
+
+2. As a user I can login so that I have access to booking
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+Navigate to the login page | The login page is displayed | Works as expected |
+Enter valid credentials (username and password) | The credentials are entered correctly with no errors | Works as expected |
+Click the "Login" button | The login is successful, the user is logged in, and a confirmation message is displayed | Works as expected |
+
+<details><summary></summary>
+<img src="staticfiles\images\images_readme\tests\manual_test\2\2_login.png">
+<img src="staticfiles\images\images_readme\tests\manual_test\2\2_login_fields.png">
+<img src="staticfiles\images\images_readme\tests\manual_test\2\2_login_button.png">
+<img src="staticfiles\images\images_readme\tests\manual_test\2\2_login_message.png">
+</details>
+
+3. As a user I can logout so that I leave the site securely
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+Ensure the user is logged in | The user is logged in and has access to the site features | Works as expected |
+Click the "Logout" button or link | The user is logged out, and a confirmation page and message is shown | Works as expected |
+
+<details><summary></summary>
+<img src="staticfiles\images\images_readme\tests\manual_test\3\3_logout.png">
+<img src="staticfiles\images\images_readme\tests\manual_test\3\3_logout_confirmation.png">
+<img src="staticfiles\images\images_readme\tests\manual_test\3\3_logout_message.png">
+</details>
+
+4. As a user I can edit my details so that I keep my details updated
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+Navigate to the profile page | The profile page is displayed | Works as expected |
+Click on the option to edit personal details | The editing interface is accessible | Works as expected |
+Modify the required fields (e.g., username, email and password) | The fields are updated correctly with no errors | Works as expected |
+Save the changes | The changes are saved successfully, and a confirmation message is displayed | Works as expected |
+
+<details><summary></summary>
+<img src="staticfiles\images\images_readme\tests\manual_test\4\4_edit.png">
+<img src="staticfiles\images\images_readme\tests\manual_test\4\4_edit_button.png">
+<img src="staticfiles\images\images_readme\tests\manual_test\4\4_edit_fields.png">
+<img src="staticfiles\images\images_readme\tests\manual_test\4\4_edit_save_button.png">
+<img src="staticfiles\images\images_readme\tests\manual_test\4\4_edit_message.png">
+</details>
+
+5. As a user I can send message so that I contact the admin
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+Navigate to the contact page | The contact page is displayed | Works as expected |
+Fill in the contact form (e.g., name, email, message) | The form fields are filled in correctly with no errors | Works as expected |
+Click the "Submit" button | The message is sent successfully, and a confirmation message is displayed | Works as expected |
+
+<details><summary></summary>
+<img src="staticfiles\images\images_readme\tests\manual_test\5\5_contact.png">
+<img src="staticfiles\images\images_readme\tests\manual_test\5\5_contact_fields.png">
+<img src="staticfiles\images\images_readme\tests\manual_test\5\5_contact_submit_button.png">
+<img src="staticfiles\images\images_readme\tests\manual_test\5\5_contact_message.png">
+</details>
+
+
+
+
+
+6. As a user, I can access contact so that I find details about the restaurant  
+7. As a user, I can book a reservation so that I secure my desired time, date, and number of people 
+8. As a user, I can access a reservation so that I update or delete it if needed 
+9. As a user, I can access menu page so that I see food and drink menu 
+10. As a user, I can navigate the home page easily so that I access the navbar 
+
+Site Owner
+11. As the site owner, I want users to easily navigate the site so that they have a seamless experience.
+12. As the site owner, I want users to be able to register and login so that they can access exclusive features.
+13. As the site owner, I want users to be able to book and manage reservations so that they can plan their visits.
+14. As the site owner, I want users to be able to contact the admin easily so that they can get support and information.
+15. As the site owner, I want to update the menu page regularly so that users see the latest offerings.
+16. As the site owner, I want to manage user accounts so that I can ensure the security and accuracy of user information.
+17. As the site owner, I want to receive messages from users so that I can address their inquiries and feedback.
+18. As the site owner, I want to track user activity so that I can improve the site and services based on user behavior.
+
+Returning User
+19. As a returning user, I want to login easily so that I can quickly access my account and reservations.
+20. As a returning user, I want to see my past reservations so that I can review my booking history.
+21. As a returning user, I want to update my details so that my profile information is current.
+22. As a returning user, I want to book new reservations easily so that I can plan my next visit.
+23. As a returning user, I want to access the menu quickly so that I can decide what to order.
+24. As a returning user, I want to contact the admin if needed so that I can get assistance or provide feedback.
+25. As a returning user, I want to see any new updates or changes to the restaurant so that I am informed about new offerings or events.
