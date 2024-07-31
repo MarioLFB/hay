@@ -10,7 +10,7 @@
         </div>
     </div>
     {% endfor %}
-    <div class="container d-flex justify-content-center align-items-center bg-color p-5 mt-3">
+    <div class="container d-flex justify-content-center align-items-center bg-color bg-black p-5 mt-3">
         <form action="{% url 'login' %}" method="POST">
             {% csrf_token %}
             {% if error_message %}
