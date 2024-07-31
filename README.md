@@ -528,4 +528,50 @@ Lighthouse was used to evaluate performance, best practices, and SEO.
 ### Wave
 WAVE was used to test the websites accessibility.
 
+<details><summary>Home</summary>
+<img src="">
+</details>
 
+<details><summary>Menu</summary>
+<img src="">
+</details>
+
+<details><summary>Drinks</summary>
+<img src="">
+</details>
+
+<details><summary>Bookings</summary>
+<img src="">
+</details>
+
+<details><summary>Delete Bookings</summary>
+<img src="">
+</details>
+
+<details><summary>Edit Bookings</summary>
+<img src="">
+</details>
+
+<details><summary>My Bookings</summary>
+<img src="">
+</details>
+
+<details><summary>Contact</summary>
+<img src="">
+</details>
+
+<details><summary>Profile</summary>
+<img src="">
+</details>
+
+<details><summary>Login</summary>
+<img src="">
+</details>
+
+<details><summary>Logout</summary>
+<img src="">
+</details>
+
+<details><summary>Register</summary>
+<img src="">
+</details>
