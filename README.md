@@ -529,49 +529,49 @@ Lighthouse was used to evaluate performance, best practices, and SEO.
 WAVE was used to test the websites accessibility.
 
 <details><summary>Home</summary>
-<img src="">
+<img src="staticfiles\images\images_readme\validation\wave\wave_home.png">
 </details>
 
 <details><summary>Menu</summary>
-<img src="">
+<img src="staticfiles\images\images_readme\validation\wave\wave_menu.png">
 </details>
 
 <details><summary>Drinks</summary>
-<img src="">
+<img src="staticfiles\images\images_readme\validation\wave\wave_drinks.png">
 </details>
 
 <details><summary>Bookings</summary>
-<img src="">
+<img src="staticfiles\images\images_readme\validation\wave\wave_bookings.png">
 </details>
 
 <details><summary>Delete Bookings</summary>
-<img src="">
+<img src="staticfiles\images\images_readme\validation\wave\wave_deletebookings.png">
 </details>
 
 <details><summary>Edit Bookings</summary>
-<img src="">
+<img src="staticfiles\images\images_readme\validation\wave\wave_edit_bookings.png">
 </details>
 
 <details><summary>My Bookings</summary>
-<img src="">
+<img src="staticfiles\images\images_readme\validation\wave\wave_mybookings.png">
 </details>
 
 <details><summary>Contact</summary>
-<img src="">
+<img src="staticfiles\images\images_readme\validation\wave\wave_contact.png">
 </details>
 
 <details><summary>Profile</summary>
-<img src="">
+<img src="staticfiles\images\images_readme\validation\wave\wave_profile.png">
 </details>
 
 <details><summary>Login</summary>
-<img src="">
+<img src="staticfiles\images\images_readme\validation\wave\wave_login.png">
 </details>
 
 <details><summary>Logout</summary>
-<img src="">
+<img src="staticfiles\images\images_readme\validation\wave\wave_logout.png">
 </details>
 
 <details><summary>Register</summary>
-<img src="">
+<img src="staticfiles\images\images_readme\validation\wave\wave_register.png">
 </details>
