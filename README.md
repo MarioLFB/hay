@@ -81,22 +81,25 @@ H.A.Y is the website of a Steak House restaurant. The site provides users with a
 
 #### Site Owner
 11. As the site owner, I want users to easily navigate the site so that they have a seamless experience.
-12. As the site owner, I want users to be able to register and login so that they can access exclusive features.
+12. As the site owner, I want users to be able to register and login so that they can access bookings area.
 13. As the site owner, I want users to be able to book and manage reservations so that they can plan their visits.
 14. As the site owner, I want users to be able to contact the admin easily so that they can get support and information.
-15. As the site owner, I want to update the menu page regularly so that users see the latest offerings.
-16. As the site owner, I want to manage user accounts so that I can ensure the security and accuracy of user information.
-17. As the site owner, I want to receive messages from users so that I can address their inquiries and feedback.
-18. As the site owner, I want to track user activity so that I can improve the site and services based on user behavior.
+
+#### Site Admin
+15. As the site admin, I want to access the admin area so that I can manage the site's administration effectively.
+16. As the site admin, I want to access the admin area so that I can manage user bookings efficiently.
+17. As the site admin, I want to access the admin area so that I can manage user contact messages/inquiries effectively.
+
+
 
 #### Returning User
-19. As a returning user, I want to login easily so that I can quickly access my account and reservations.
-20. As a returning user, I want to see my past reservations so that I can review my booking history.
-21. As a returning user, I want to update my details so that my profile information is current.
-22. As a returning user, I want to book new reservations easily so that I can plan my next visit.
-23. As a returning user, I want to access the menu quickly so that I can decide what to order.
-24. As a returning user, I want to contact the admin if needed so that I can get assistance or provide feedback.
-25. As a returning user, I want to see any new updates or changes to the restaurant so that I am informed about new offerings or events.
+18. As a returning user, I want to login easily so that I can quickly access my account and reservations.
+19. As a returning user, I want to see my past reservations so that I can review my booking history.
+20. As a returning user, I want to update my details so that my profile information is current.
+21. As a returning user, I want to book new reservations easily so that I can plan my next visit.
+22. As a returning user, I want to access the menu quickly so that I can decide what to order.
+23. As a returning user, I want to contact the admin if needed so that I can get assistance or provide feedback.
+24. As a returning user, I want to see any new updates or changes to the restaurant so that I am informed about new offerings or events.
 
 ### Milestones, Epics, and User Stories (Acceptance Criteria and tasks)
 - The project followed the agile framework, using Milestones to mark significant checkpoints, Epics to organize large blocks of work, and User Stories to detail specific functionalities (Acceptance Criteria and tasks).
@@ -748,21 +751,71 @@ View the Footer | Social media (Instagram) is shown as a footer at the bottom of
 
 
 
-Site Owner
+#### Site Owner
 11. As the site owner, I want users to easily navigate the site so that they have a seamless experience.
-12. As the site owner, I want users to be able to register and login so that they can access exclusive features.
-13. As the site owner, I want users to be able to book and manage reservations so that they can plan their visits.
-14. As the site owner, I want users to be able to contact the admin easily so that they can get support and information.
-15. As the site owner, I want to update the menu page regularly so that users see the latest offerings.
-16. As the site owner, I want to manage user accounts so that I can ensure the security and accuracy of user information.
-17. As the site owner, I want to receive messages from users so that I can address their inquiries and feedback.
-18. As the site owner, I want to track user activity so that I can improve the site and services based on user behavior.
 
-Returning User
-19. As a returning user, I want to login easily so that I can quickly access my account and reservations.
-20. As a returning user, I want to see my past reservations so that I can review my booking history.
-21. As a returning user, I want to update my details so that my profile information is current.
-22. As a returning user, I want to book new reservations easily so that I can plan my next visit.
-23. As a returning user, I want to access the menu quickly so that I can decide what to order.
-24. As a returning user, I want to contact the admin if needed so that I can get assistance or provide feedback.
-25. As a returning user, I want to see any new updates or changes to the restaurant so that I am informed about new offerings or events.
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+Navigate to the menu page | Automatic photo slider and shown as main page | Works as expected |
+View the Logo | Logo is displayed at the top of the page | Works as expected |
+View the Navbar | Navbar is displayed at the top of the page (menu, bookings, contact, profile name if logged in and login/logout) | Works as expected |
+View the Footer | Social media (Instagram) is shown as a footer at the bottom of the page | Works as expected |
+
+<details><summary></summary>
+<img src="">
+</details>
+
+12. As the site owner, I want users to be able to register and login so that they can access bookings area.
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+Navigate to the registration page | The registration page is displayed | Works as expected |
+Complete the registration process with valid user details | The registration is successful, and the user receives a confirmation | Works as expected |
+Log in using the registered credentials | The user is successfully logged in and has access to the bookings area | Works as expected |
+Verify that only logged-in users can access the bookings area | Unregistered or logged-out users are prompted to log in | Works as expected |
+
+<details><summary></summary>
+<img src="">
+</details>
+
+13. As the site owner, I want users to be able to book and manage reservations so that they can plan their visits.
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+Navigate to the bookings page after logging in | The reservation page is displayed for logged-in users | Works as expected |
+Book a reservation by selecting the desired date, time, and number of people | The reservation is successfully booked, and a confirmation is shown | Works as expected |
+Access the reservation management section | Users can view, update, or delete their reservations | Works as expected |
+Verify that changes to reservations are saved correctly | Any updates or deletions are reflected accurately | Works as expected |
+
+<details><summary></summary>
+<img src="">
+</details>
+
+14. As the site owner, I want users to be able to contact the admin easily so that they can get support and information.
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+Navigate to the contact page | The contact page is displayed | Works as expected |
+Fill in and submit the contact form (e.g., subject, message) | The form is submitted successfully, and the user receives a confirmation message | Works as expected |
+Verify that the contact message is delivered to the admin | The message is correctly sent to the admin | Works as expected |
+Confirm that users receive an acknowledgment or confirmation of their inquiry | Users directed to confirmation message | Works as expected |
+
+<details><summary></summary>
+<img src="">
+</details>
+
+#### Site Admin
+15. As the site admin, I want to access the admin area so that I can manage the site's administration effectively.
+16. As the site admin, I want to access the admin area so that I can manage user bookings efficiently.
+17. As the site admin, I want to access the admin area so that I can manage user contact messages/inquiries effectively.
+
+
+
+#### Returning User
+18. As a returning user, I want to login easily so that I can quickly access my account and reservations.
+19. As a returning user, I want to see my past reservations so that I can review my booking history.
+20. As a returning user, I want to update my details so that my profile information is current.
+21. As a returning user, I want to book new reservations easily so that I can plan my next visit.
+22. As a returning user, I want to access the menu quickly so that I can decide what to order.
+23. As a returning user, I want to contact the admin if needed so that I can get assistance or provide feedback.
+24. As a returning user, I want to see any new updates or changes to the restaurant so that I am informed about new offerings or events.
