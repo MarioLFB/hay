@@ -664,15 +664,89 @@ Click the "Submit" button | The message is sent successfully, and a confirmation
 <img src="staticfiles\images\images_readme\tests\manual_test\5\5_contact_message.png">
 </details>
 
+6. As a user, I can access contact so that I find details about the restaurant
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+Navigate to the contact page | The contact page is displayed | Works as expected |
+View the restaurant's contact details (map, address, phone number, email, etc.) | The contact details are visible and correctly displayed | Works as expected |
+
+<details><summary></summary>
+<img src="staticfiles\images\images_readme\tests\manual_test\6\6_contact_info.png">
+<img src="staticfiles\images\images_readme\tests\manual_test\6\6_contact_info_details.png">
+</details>
+
+7. As a user, I can book a reservation so that I secure my desired time, date, and number of people
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+Navigate to the bookings page | The reservation page is displayed | Works as expected |
+Fill in the reservation form (date, time, number of people, phone, email and name) | The form fields are filled in correctly with no errors | Works as expected |
+Click the "Book" button | The reservation is successfully made, and a confirmation message is displayed | Works as expected |
+Verify that the reservation details are correct in the My bookings page | The confirmation shows the correct reservation details | Works as expected |
+
+<details><summary></summary>
+<img src="staticfiles\images\images_readme\tests\manual_test\7\7_bookings_page.png">
+<img src="staticfiles\images\images_readme\tests\manual_test\7\7_bookings_fields.png">
+<img src="staticfiles\images\images_readme\tests\manual_test\7\7_bookings_button.png">
+<img src="staticfiles\images\images_readme\tests\manual_test\7\7_bookings_my_booking.png">
+<img src="staticfiles\images\images_readme\tests\manual_test\7\7_bookings_message.png">
+</details>
+
+8. As a user, I can access a reservation so that I update or delete it if needed
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+Navigate to the bookings page or user profile | The bookings page or section is displayed | Works as expected |
+Select the My Bookings section | My Bookings is displayed correctly | Works as expected |
+Locate and select the booking to be updated or deleted | The booking is displayed correctly | Works as expected |
+Make the necessary updates or choose to delete the booking | The updates are saved or the reservation is successfully deleted | Works as expected |
+Show update or delete confirmation message | The messages were shown respectively | Works as expected |
+Confirm that the changes are reflected correctly | The reservation details are updated or removed as expected | Works as expected |
+
+<details><summary></summary>
+<img src="staticfiles\images\images_readme\tests\manual_test\8\8_my_bookings_path.png">
+<img src="staticfiles\images\images_readme\tests\manual_test\8\8_my_bookings_data_updated.png">
+<img src="staticfiles\images\images_readme\tests\manual_test\8\8_my_bookings_links.png">
+<img src="staticfiles\images\images_readme\tests\manual_test\8\8_my_bookings_update_message.png">
+<img src="staticfiles\images\images_readme\tests\manual_test\8\8_my_bookings_update.png">
+<img src="staticfiles\images\images_readme\tests\manual_test\8\8_my_bookings_update_button.png">
+<img src="staticfiles\images\images_readme\tests\manual_test\8\8_my_bookings_delete.png">
+<img src="staticfiles\images\images_readme\tests\manual_test\8\8_my_bookings_delete_confirm_message.png">
+<img src="staticfiles\images\images_readme\tests\manual_test\8\8_my_bookings_delete_message.png">
+</details>
+
+9. As a user, I can access menu page so that I see food and drink menu
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+Navigate to the menu page | The menu page is displayed | Works as expected |
+View the food and drinks options | The menu items are visible and correctly displayed | Works as expected |
+Verify that all menu items are categorized and priced correctly | The items are categorized and priced accurately | Works as expected |
+
+<details><summary></summary>
+<img src="staticfiles\images\images_readme\tests\manual_test\9\9_menu_page.png">
+<img src="staticfiles\images\images_readme\tests\manual_test\9\9_menu_page_food.png">
+<img src="staticfiles\images\images_readme\tests\manual_test\9\9_menu_page_drinks.png">
+</details>
+
+10. As a user, I can navigate the home page easily so that I access the navbar
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+Navigate to the menu page | Automatic photo slider and shown as main page | Works as expected |
+View the Logo | Logo is displayed at the top of the page | Works as expected |
+View the Navbar | Navbar is displayed at the top of the page (menu, bookings, contact, profile name if logged in and login/logout) | Works as expected |
+View the Footer | Social media (Instagram) is shown as a footer at the bottom of the page | Works as expected |
+
+<details><summary></summary>
+<img src="staticfiles\images\images_readme\tests\manual_test\10\10_home_logo.png">
+<img src="staticfiles\images\images_readme\tests\manual_test\10\10_home_navbar.png">
+<img src="staticfiles\images\images_readme\tests\manual_test\10\10_home_photo_slide.png">
+<img src="staticfiles\images\images_readme\tests\manual_test\10\10_home_footer.png">
+</details>
 
 
-
-
-6. As a user, I can access contact so that I find details about the restaurant  
-7. As a user, I can book a reservation so that I secure my desired time, date, and number of people 
-8. As a user, I can access a reservation so that I update or delete it if needed 
-9. As a user, I can access menu page so that I see food and drink menu 
-10. As a user, I can navigate the home page easily so that I access the navbar 
 
 Site Owner
 11. As the site owner, I want users to easily navigate the site so that they have a seamless experience.
