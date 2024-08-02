@@ -820,8 +820,46 @@ Check the prices of the food and drinks items | Prices are displayed correctly a
 
 #### Site Admin
 16. As the site admin, I want to access the admin area so that I can manage the site's administration effectively.
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+Log in with admin credentials | The admin is successfully logged in and redirected to the admin dashboard | Works as expected |
+Access the site administration panel from the dashboard | The admin area for site management is accessible | Works as expected |
+Navigate through the different sections for site settings and user management | All site administration functionalities are available and working correctly | Works as expected |
+
+<details><summary></summary>
+<img src="staticfiles\images\images_readme\tests\manual_test\16\16_admin.png">
+</details>
+
 17. As the site admin, I want to access the admin area so that I can manage user bookings efficiently.
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+Log in with admin credentials and access the admin area | The admin is successfully logged in and can access the admin area | Works as expected |
+Navigate to the bookings management section | The bookings management interface is displayed correctly | Works as expected |
+View all user bookings | The admin can easily view and edit user bookings | Works as expected |
+Update, cancel, or modify user bookings as needed | Any changes made to bookings are saved correctly | Works as expected |
+Confirm that changes are reflected accurately in the user’s booking details | The updates or cancellations are reflected correctly in the user interface | Works as expected |
+
+<details><summary></summary>
+<img src="staticfiles\images\images_readme\tests\manual_test\17\17_admin_booking.png">
+</details>
+
 18. As the site admin, I want to access the admin area so that I can manage user contact messages/inquiries effectively.
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+Log in with admin credentials and access the admin area | The admin is successfully logged in and can access the admin area | Works as expected |
+Navigate to the contact messages management section | The contact messages/inquiries interface is displayed correctly | Works as expected |
+View user messages | The admin can easily view, filter, and search through user messages | Works as expected |
+
+<details><summary></summary>
+<img src="staticfiles\images\images_readme\tests\manual_test\18\17_admin_contact.png">
+</details>
+
+
+
+
 
 
 
