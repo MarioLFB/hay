@@ -91,16 +91,12 @@ H.A.Y is the website of a Steak House restaurant. The site provides users with a
 17. As the site admin, I want to access the admin area so that I can manage user bookings efficiently.
 18. As the site admin, I want to access the admin area so that I can manage user contact messages/inquiries effectively.
 
-
-
 #### Returning User
 19. As a returning user, I want to login easily so that I can quickly access my account and reservations.
-20. As a returning user, I want to see my past reservations so that I can review my booking history.
+20. As a returning user, I want to see my booking so that I can review, edit, or delete.
 21. As a returning user, I want to update my details so that my profile information is current.
-22. As a returning user, I want to book new reservations easily so that I can plan my next visit.
-23. As a returning user, I want to access the menu quickly so that I can decide what to order.
-24. As a returning user, I want to contact the admin if needed so that I can get assistance or provide feedback.
-25. As a returning user, I want to see any new updates or changes to the restaurant so that I am informed about new offerings or events.
+22. As a returning user, I want to access the menu quickly so that I can decide what to order.
+23. As a returning user, I want to contact the admin if needed so that I can contact the restaurant/admin.
 
 ### Milestones, Epics, and User Stories (Acceptance Criteria and tasks)
 - The project followed the agile framework, using Milestones to mark significant checkpoints, Epics to organize large blocks of work, and User Stories to detail specific functionalities (Acceptance Criteria and tasks).
@@ -857,17 +853,66 @@ View user messages | The admin can easily view, filter, and search through user 
 <img src="staticfiles\images\images_readme\tests\manual_test\18\17_admin_contact.png">
 </details>
 
-
-
-
-
-
-
 #### Returning User
+
 19. As a returning user, I want to login easily so that I can quickly access my account and reservations.
-20. As a returning user, I want to see my past reservations so that I can review my booking history.
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+Navigate to the login page | The login page is displayed quickly and correctly | Works as expected |
+Enter login credentials (email and password) | The credentials are entered without issues | Works as expected |
+Click the "Login" button | The user is successfully logged in and redirected to their account or dashboard | Works as expected |
+Verify access to the user’s account and reservation details | The user can view and manage their account and reservations | Works as expected |
+
+<details><summary></summary>
+<img src="staticfiles\images\images_readme\tests\manual_test\19\19_returning_account.png">
+</details>
+
+20. As a returning user, I want to see my booking so that I can review, edit, or delete.
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+Log in and navigate to the booking page | The booking page is displayed, showing the upcoming bookings | Works as expected |
+View more details or make changes | The booking details are displayed, and options to edit or delete are available | Works as expected |
+Edit the booking details (e.g., change the date or time) and save | The booking is updated successfully | Works as expected |
+Delete a booking if needed and confirm the deletion | The booking is deleted successfully, and it is removed from the my booking section | Works as expected |
+
+<details><summary></summary>
+<img src="staticfiles\images\images_readme\tests\manual_test\20\20_returning_booking.png">
+</details>
+
 21. As a returning user, I want to update my details so that my profile information is current.
-22. As a returning user, I want to book new reservations easily so that I can plan my next visit.
-23. As a returning user, I want to access the menu quickly so that I can decide what to order.
-24. As a returning user, I want to contact the admin if needed so that I can get assistance or provide feedback.
-25. As a returning user, I want to see any new updates or changes to the restaurant so that I am informed about new offerings or events.
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+Log in and navigate to the profile page | The profile settings page is displayed | Works as expected |
+Edit personal details (e.g., username, email and password) | The details are updated successfully without errors | Works as expected |
+Save the changes | The changes are saved, and a confirmation message is displayed | Works as expected |
+
+<details><summary></summary>
+<img src="staticfiles\images\images_readme\tests\manual_test\21\21_returning_profile.png">
+</details>
+
+22. As a returning user, I want to access the menu quickly so that I can decide what to order.
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+Navigate to the menu page from the navbar | The menu page loads quickly and correctly | Works as expected |
+Browse the food and drink options | The menu items are visible, well-organized, and easy to navigate | Works as expected |
+
+<details><summary></summary>
+<img src="staticfiles\images\images_readme\tests\manual_test\22\22_returning_menu.png">
+</details>
+
+23. As a returning user, I want to contact the admin if needed so that I can contact the restaurant/admin.
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+Navigate to the contact page | The contact page is displayed | Works as expected |
+Fill out and submit the contact form with the message | The form is submitted successfully, and the user receives a confirmation message | Works as expected |
+Finds restaurant location | Shows map, address, telephone and email | Works as expected |
+Verify that the message is received by the admin or restaurant | The admin or restaurant receives the message, or it is stored for review | Works as expected |
+
+<details><summary></summary>
+<img src="staticfiles\images\images_readme\tests\manual_test\23\23_returning_contact.png">
+</details>
