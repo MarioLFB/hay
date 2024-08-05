@@ -938,3 +938,28 @@ Each test was organized into its respective folder within the corresponding app.
 <img src="staticfiles\images\images_readme\tests\automated_test\users\users_test_views.png">
 </details>
 
+### Device Testing & Browser compatibility
+Responsiveness tests and device compatibility checks were performed. 
+Both Google Chrome Developer Tools and BrowserStack were used for this purpose.
+Testing was conducted in both portrait and landscape orientations.
+
+<details><summary>Iphone X</summary>
+<img src="">
+</details>
+
+<details><summary>Galaxy Note 10</summary>
+<img src="">
+</details>
+
+<details><summary>Ipad Pro</summary>
+<img src="">
+</details>
+
+<details><summary>Iphone 14</summary>
+<img src="">
+</details>
+
+<details><summary>Galaxy S20</summary>
+<img src="">
+</details>
+
