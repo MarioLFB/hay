@@ -944,22 +944,22 @@ Both Google Chrome Developer Tools and BrowserStack were used for this purpose.
 Testing was conducted in both portrait and landscape orientations.
 
 <details><summary>Iphone X</summary>
-<img src="">
+<img src="staticfiles\images\images_readme\tests\device_testing_compatibility\browserstack_iphonex.png">
 </details>
 
 <details><summary>Galaxy Note 10</summary>
-<img src="">
+<img src="staticfiles\images\images_readme\tests\device_testing_compatibility\browserstack_galaxynote10.png">
 </details>
 
 <details><summary>Ipad Pro</summary>
-<img src="">
+<img src="staticfiles\images\images_readme\tests\device_testing_compatibility\browserstack_ipadpro.png">
 </details>
 
 <details><summary>Iphone 14</summary>
-<img src="">
+<img src="staticfiles\images\images_readme\tests\device_testing_compatibility\chrome_developer_iphone14.png">
 </details>
 
 <details><summary>Galaxy S20</summary>
-<img src="">
+<img src="staticfiles\images\images_readme\tests\device_testing_compatibility\chrome_developer_galaxys20.png">
 </details>
 
