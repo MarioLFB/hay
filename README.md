@@ -916,3 +916,20 @@ Verify that the message is received by the admin or restaurant | The admin or re
 <details><summary></summary>
 <img src="staticfiles\images\images_readme\tests\manual_test\23\23_returning_contact.png">
 </details>
+
+### Automated Testing
+Testing was conducted using Django's built-in unittest module.
+Each test was organized into its respective folder within the corresponding app.
+
+<details><summary>Bookings</summary>
+<img src="">
+</details>
+
+<details><summary>Contact</summary>
+<img src="">
+</details>
+
+<details><summary>Users</summary>
+<img src="">
+</details>
+
