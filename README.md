@@ -967,10 +967,10 @@ Testing was conducted in both portrait and landscape orientations.
 
 | **Bug** | **Fix** | **Commit Reference** |
 | ------- | ------- | --------------------- |
-| Logo file path in base.html causing display issues | Fixed the logo file path by correcting the backslash to a forward slash in the `src` attribute of the `img` tag. | b370ce0 |
+| Logo file path in base.html causing display issues | Fixed the logo file path by correcting the backslash to a forward slash in the src attribute of the img tag. | b370ce0 |
 | Unused imports in views.py | Removed unused import get_object_or_404 and optimized imports by retaining only necessary ones. | f2c4c66 |
 | Missing newline at end of file in styles.css | Added a newline at the end of the styles.css file to follow standard formatting practices. | fe1205f |
 | Unused featured_image field in Table model | Removed featured_image field from the Table model, including related migrations and template references. | 74703ff |
-| ALLOWED_HOSTS setting missing necessary entries | Added localhost, 127.0.0.1, and .herokuapp.com to the ALLOWED_HOSTS in `settings.py` to ensure proper configuration for local and deployment environments. | 8da53c9 |
+| ALLOWED_HOSTS setting missing necessary entries | Added localhost, 127.0.0.1, and .herokuapp.com to the ALLOWED_HOSTS in settings.py to ensure proper configuration for local and deployment environments. | 8da53c9 |
 | TableForm allowing multiple bookings by the same user | Refactored TableForm to include validation that prevents multiple bookings by the same user. | fd4ff31 |
 | Missing column in mybookings.html table | Added missing column to the mybookings.html table to ensure all relevant data is displayed. | b237826 |
