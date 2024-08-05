@@ -922,14 +922,19 @@ Testing was conducted using Django's built-in unittest module.
 Each test was organized into its respective folder within the corresponding app.
 
 <details><summary>Bookings</summary>
-<img src="">
+<img src="staticfiles\images\images_readme\tests\automated_test\bookings\bookings_test_forms.png">
+<img src="staticfiles\images\images_readme\tests\automated_test\bookings\bookings_test_models.png">
+<img src="staticfiles\images\images_readme\tests\automated_test\bookings\bookings_test_views.png">
 </details>
 
 <details><summary>Contact</summary>
-<img src="">
+<img src="staticfiles\images\images_readme\tests\automated_test\contact\contact_test_forms.png">
+<img src="staticfiles\images\images_readme\tests\automated_test\contact\contact_test_models.png">
+<img src="staticfiles\images\images_readme\tests\automated_test\contact\contact_test_views.png">
 </details>
 
 <details><summary>Users</summary>
-<img src="">
+<img src="staticfiles\images\images_readme\tests\automated_test\users\users_test_forms.png">
+<img src="staticfiles\images\images_readme\tests\automated_test\users\users_test_views.png">
 </details>
 
