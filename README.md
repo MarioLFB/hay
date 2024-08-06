@@ -168,7 +168,22 @@ The site is developed with a responsive template for all types of screens. The h
 ### Wireframes
 The wireframes were created using Drawio
 <details><summary></summary>
-<img src="docs/wireframes.png">
+<img src="staticfiles\images\images_readme\wireframes\hay_404page_drawio.png">
+<img src="staticfiles\images\images_readme\wireframes\hay_booked_drawio.png">
+<img src="staticfiles\images\images_readme\wireframes\hay_bookings_drawio.png">
+<img src="staticfiles\images\images_readme\wireframes\hay_contact_drawio.png">
+<img src="staticfiles\images\images_readme\wireframes\hay_deletebookings_drawio.png">
+<img src="staticfiles\images\images_readme\wireframes\hay_editbookings_drawio.png">
+<img src="staticfiles\images\images_readme\wireframes\hay_editprofile_drawio.png">
+<img src="staticfiles\images\images_readme\wireframes\hay_home_drawio.png">
+<img src="staticfiles\images\images_readme\wireframes\hay_login_drawio.png">
+<img src="staticfiles\images\images_readme\wireframes\hay_logout_drawio.png">
+<img src="staticfiles\images\images_readme\wireframes\hay_menu_drawio.png">
+<img src="staticfiles\images\images_readme\wireframes\hay_mybookings_drawio.png">
+<img src="staticfiles\images\images_readme\wireframes\hay_profile_drawio.png">
+<img src="staticfiles\images\images_readme\wireframes\hay_signup_drawio.png">
+<img src="staticfiles\images\images_readme\wireframes\hay_responsive_drawio.png">
+
 </details>
 
 
