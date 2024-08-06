@@ -165,6 +165,12 @@ The site is developed with a responsive template for all types of screens. The h
 - message
 - created_at
 
+### Wireframes
+The wireframes were created using Drawio
+<details><summary></summary>
+<img src="docs/wireframes.png">
+</details>
+
 
 ## Technologies Used
 
