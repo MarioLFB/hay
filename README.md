@@ -1,5 +1,3 @@
-# hay
-
 # H.A.Y
 
 <img src="staticfiles\images\images_readme\responsive_browserstack.png">
@@ -63,7 +61,6 @@ H.A.Y is the website of a Steak House restaurant. The site provides users with a
 - A welcoming and aesthetically pleasing design.
 - Integration with social media(Instagram).
 - Clear and accessible contact information.
-
 
 ### User Stories
 
