@@ -1022,12 +1022,12 @@ This application was deployed from GitHub using Heroku. Here’s the process:
 
 5. In settings.py, connect to the database. I store mine in env.py.
 <details><summary></summary>
-<img src="">
+<img src="staticfiles\images\images_readme\heroku\heroku_settings_database.png">
 </details>
 
 6. To ensure it works correctly, DEBUG should be set to False in the settings.py file.
 <details><summary></summary>
-<img src="staticfiles\images\images_readme\heroku\heroku_settings_database.png">
+<img src="staticfiles\images\images_readme\heroku\heroku_debug.png">
 </details>
 
 7. Access the Heroku app settings, go to Config Vars, and add DATABASE_URL, DISABLE_COLLECTSTATIC=1, PORT=8080, and the appropriate SECRET_KEY.
