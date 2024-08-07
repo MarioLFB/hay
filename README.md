@@ -220,7 +220,7 @@ The wireframes were created using Drawio
 
 <details><summary>Home Page</summary>
 
-<img src="staticfiles\images\images_readme\Features\home.png">
+<img src="staticfiles\images\images_readme\features\home.png">
 </details>
 
 ### Logo and Navigation
@@ -233,17 +233,17 @@ The wireframes were created using Drawio
 
 <details><summary>Logo</summary>
 
-<img src="staticfiles\images\images_readme\Features\logo.png">
+<img src="staticfiles\images\images_readme\features\logo.png">
 </details>
 
 <details><summary>Nav Bar</summary>
 
-<img src="staticfiles\images\images_readme\Features\navbar.png">
+<img src="staticfiles\images\images_readme\features\navbar.png">
 </details>
 
 <details><summary>Responsiveness</summary>
 
-<img src="staticfiles\images\images_readme\Features\navbar_responsive.png">
+<img src="staticfiles\images\images_readme\features\navbar_responsive.png">
 </details>
 
 ### Footer
@@ -253,7 +253,7 @@ The wireframes were created using Drawio
 
 <details><summary>Footer</summary>
 
-<img src="staticfiles\images\images_readme\Features\footer.png">
+<img src="staticfiles\images\images_readme\features\footer.png">
 </details>
 
 ### Sign up / Register
@@ -263,7 +263,7 @@ The wireframes were created using Drawio
 
 <details><summary>Sign up</summary>
 
-<img src="staticfiles\images\images_readme\Features\sign_up.png">
+<img src="staticfiles\images\images_readme\features\sign_up.png">
 </details>
 
 ### Login, Logout and Profile
@@ -272,17 +272,17 @@ The wireframes were created using Drawio
 
 <details><summary>Login</summary>
 
-<img src="staticfiles\images\images_readme\Features\login.png">
+<img src="staticfiles\images\images_readme\features\login.png">
 </details>
 
 <details><summary>Logout</summary>
 
-<img src="staticfiles\images\images_readme\Features\logout.png">
+<img src="staticfiles\images\images_readme\features\logout.png">
 </details>
 
 <details><summary>Profile</summary>
 
-<img src="staticfiles\images\images_readme\Features\profile.png">
+<img src="staticfiles\images\images_readme\features\profile.png">
 </details>
 
 ### Contact
@@ -293,7 +293,7 @@ The wireframes were created using Drawio
 
 <details><summary>Contact</summary>
 
-<img src="staticfiles\images\images_readme\Features\contact.png">
+<img src="staticfiles\images\images_readme\features\contact.png">
 </details>
 
 ### Bookings
@@ -304,7 +304,7 @@ The wireframes were created using Drawio
 
 <details><summary>Bookings</summary>
 
-<img src="staticfiles\images\images_readme\Features\bookings.png">
+<img src="staticfiles\images\images_readme\features\bookings.png">
 </details>
 
 ### My Bookings
@@ -316,7 +316,7 @@ The wireframes were created using Drawio
 
 <details><summary>My Bookings</summary>
 
-<img src="staticfiles\images\images_readme\Features\my_bookings.png">
+<img src="staticfiles\images\images_readme\features\my_bookings.png">
 </details>
 
 ### Edit Bookings
@@ -326,7 +326,7 @@ The wireframes were created using Drawio
 
 <details><summary>Edit Bookings</summary>
 
-<img src="staticfiles\images\images_readme\Features\edit_bookings.png">
+<img src="staticfiles\images\images_readme\features\edit_bookings.png">
 </details>
 
 ### Menu
@@ -336,7 +336,7 @@ The wireframes were created using Drawio
 
 <details><summary>Menu</summary>
 
-<img src="staticfiles\images\images_readme\Features\menu.png">
+<img src="staticfiles\images\images_readme\features\menu.png">
 </details>
 
 ### Page Not Found (Error 404)
@@ -346,7 +346,17 @@ The wireframes were created using Drawio
 
 <details><summary>Error 404</summary>
 
-<img src="staticfiles\images\images_readme\Features\menu.png">
+<img src="staticfiles\images\images_readme\features\404page.png">
+</details>
+
+### Admin Area Overview
+- The admin area provides comprehensive access for managing the entire site, including administrative tasks, user bookings, and contact messages.
+- This centralized access enables efficient oversight and handling of site operations.
+- User stories covered: 16, 17 and 18
+
+<details><summary>Admin Area</summary>
+
+<img src="staticfiles\images\images_readme\features\admin.png">
 </details>
 
 
