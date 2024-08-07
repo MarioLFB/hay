@@ -2,7 +2,6 @@
 
 # H.A.Y
 
-![BrowserStack]
 <img src="staticfiles\images\images_readme\responsive_browserstack.png">
 
 **Developer: Mario Borges**
