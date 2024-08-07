@@ -2,7 +2,8 @@
 
 # H.A.Y
 
-![BrowserStack](staticfiles\images\images_readme\responsive_browserstack.png)
+![BrowserStack]
+<img src="staticfiles\images\images_readme\responsive_browserstack.png">
 
 **Developer: Mario Borges**
 
