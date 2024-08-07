@@ -2,7 +2,7 @@
 
 # H.A.Y
 
-![Am I Responsive]()
+![BrowserStack](staticfiles\images\images_readme\responsive_browserstack.png)
 
 **Developer: Mario Borges**
 
