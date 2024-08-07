@@ -995,3 +995,75 @@ Testing was conducted in both portrait and landscape orientations.
 | ALLOWED_HOSTS setting missing necessary entries | Added localhost, 127.0.0.1, and .herokuapp.com to the ALLOWED_HOSTS in settings.py to ensure proper configuration for local and deployment environments. | 8da53c9 |
 | TableForm allowing multiple bookings by the same user | Refactored TableForm to include validation that prevents multiple bookings by the same user. | fd4ff31 |
 | Missing column in mybookings.html table | Added missing column to the mybookings.html table to ensure all relevant data is displayed. | b237826 |
+
+### Heroku Deployment
+
+This application was deployed from GitHub using Heroku. Here’s the process:
+
+1. Create an account at heroku.com
+<details><summary></summary>
+<img src="staticfiles\images\images_readme\heroku\heroku_signup.png">
+</details>
+
+2. Create a new app
+<details><summary></summary>
+<img src="staticfiles\images\images_readme\heroku\heroku_create_app.png">
+</details>
+
+3. Run pip3 freeze > requirements.txt
+<details><summary></summary>
+<img src="staticfiles\images\images_readme\heroku\heroku_requirements.png">
+</details>
+
+4. Add Procfile: web: gunicorn hay.wsgi
+<details><summary></summary>
+<img src="staticfiles\images\images_readme\heroku\heroku_procfile.png">
+</details>
+
+5. In settings.py, connect to the database. I store mine in env.py.
+<details><summary></summary>
+<img src="">
+</details>
+
+6. To ensure it works correctly, DEBUG should be set to False in the settings.py file.
+<details><summary></summary>
+<img src="staticfiles\images\images_readme\heroku\heroku_settings_database.png">
+</details>
+
+7. Access the Heroku app settings, go to Config Vars, and add DATABASE_URL, DISABLE_COLLECTSTATIC=1, PORT=8080, and the appropriate SECRET_KEY.
+<details><summary></summary>
+<img src="staticfiles\images\images_readme\heroku\heroku_config_vars.png">
+</details>
+
+8. Go to the Deploy tab, connect the app to the correct GitHub repository, and deploy it.
+<details><summary></summary>
+<img src="staticfiles\images\images_readme\heroku\heroku_deploy.png">
+</details>
+
+### Fork the Repository
+
+To fork the repository, follow these steps:
+
+1. Navigate to the GitHub repository.
+2. Click the "Fork" button in the upper right corner.
+
+### Clone the repository, follow these steps:
+
+1. Go to the GitHub repository.
+2. Click the "Code" button above the list of files.
+3. Choose to clone via HTTPS, SSH, or GitHub CLI, and copy the URL.
+4. Open Git Bash.
+5. Change the current directory to where you want the repository to be cloned.
+6. Type "git clone" followed by the URL you copied (e.g., git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY).
+7. Press Enter to create your local copy.
+
+### Credits
+
+The images were sourced from Unsplash.com, and the logo was created using Ideogram.ai.
+
+### Acknowledgements
+
+Special thanks to:
+Code Institute
+Mo Shami (mentor)
+
