@@ -74,7 +74,7 @@ H.A.Y is the website of a Steak House restaurant. The site provides users with a
 7. As a user, I can book a reservation so that I secure my desired time, date, and number of people 
 8. As a user, I can access a reservation so that I update or delete it if needed 
 9. As a user, I can access menu page so that I see food and drink menu 
-10. As a user, I can navigate the home page easily so that I access the navbar 
+10. As a user, I can navigate the home page easily so that I access the navbar and be directed appropriately in case of an error. 
 
 #### Site Owner
 11. As the site owner, I want users to easily navigate the site so that they have a seamless experience.
@@ -216,6 +216,7 @@ The wireframes were created using Drawio
 
 ### Home page
 - Homepage includes a navigation bar, main body (automatic image slideshow), and a footer (link to Instagram).
+- User stories covered: 10 and 11
 
 <details><summary>Home Page</summary>
 
@@ -228,6 +229,7 @@ The wireframes were created using Drawio
 - Switches to a hamburger menu on smaller screens
 - Displays login/logout status
 - Present on all pages
+- User stories covered: 1, 3 and 10
 
 <details><summary>Logo</summary>
 
@@ -247,6 +249,7 @@ The wireframes were created using Drawio
 ### Footer
 - Contains a link to the restaurant's Instagram
 - Displayed only on the Homepage
+- User stories covered: 6
 
 <details><summary>Footer</summary>
 
@@ -256,6 +259,7 @@ The wireframes were created using Drawio
 ### Sign up / Register
 - Enable users to create an account
 - Username, password and email are required
+- User stories covered: 1, 12 and 19
 
 <details><summary>Sign up</summary>
 
@@ -264,6 +268,7 @@ The wireframes were created using Drawio
 
 ### Login, Logout and Profile
 - Users can log in and out, and access their user area, where they can view their profile page to update their information and find a link to the booking page.
+- User stories covered: 2, 3, 4, 19 and 21
 
 <details><summary>Login</summary>
 
@@ -284,6 +289,7 @@ The wireframes were created using Drawio
 - The Contact page provides any user (registered or not/logged in or not) the ability to get in touch with the Admin. 
 - The Contact page also includes a map, address, phone number, and contact email.
 - Admin has access to messages through the site's Admin panel
+- User stories covered: 5, 6, 14 and 23
 
 <details><summary>Contact</summary>
 
@@ -294,6 +300,7 @@ The wireframes were created using Drawio
 - The Bookings page allows users to make reservations by providing details such as the number of people, name, phone number, email, date, and time.
 - Users can view and manage their bookings.
 - The page features two buttons: "Book" for making a new reservation and "My Bookings" to review existing ones.
+- User stories covered: 2, 7, 8, 13, 19 and 20
 
 <details><summary>Bookings</summary>
 
@@ -305,6 +312,7 @@ The wireframes were created using Drawio
 - If no bookings are found, the page displays: "You have no bookings yet. Click here to make a booking."
 - If bookings exist, details such as name, phone number, email, capacity, date, and time are shown.
 - Users can manage their bookings with "Delete" and "Update" buttons.
+- User stories covered: 8, 13 and 20
 
 <details><summary>My Bookings</summary>
 
@@ -314,6 +322,7 @@ The wireframes were created using Drawio
 ### Edit Bookings
 - The Edit Bookings page allows users to modify their existing reservation details.
 - Users can update the number of people, name, phone number, email, date, and time of the booking.
+- User stories covered: 8, 13 and 20
 
 <details><summary>Edit Bookings</summary>
 
@@ -323,8 +332,19 @@ The wireframes were created using Drawio
 ### Menu
 - Contains two tabs: Food and Drinks.
 - Accessible to any user, even without login or registration.
+- User stories covered: 9, 10, 15 and 22
 
 <details><summary>Menu</summary>
+
+<img src="staticfiles\images\images_readme\Features\menu.png">
+</details>
+
+### Page Not Found (Error 404)
+- The page you’re looking for could not be found.
+- Check the URL or use the button to return to the homepage.
+- User stories covered: 10
+
+<details><summary>Error 404</summary>
 
 <img src="staticfiles\images\images_readme\Features\menu.png">
 </details>
@@ -748,7 +768,7 @@ Verify that all menu items are categorized and priced correctly | The items are 
 <img src="staticfiles\images\images_readme\tests\manual_test\9\9_menu_page_drinks.png">
 </details>
 
-10. As a user, I can navigate the home page easily so that I access the navbar
+10. As a user, I can navigate the home page easily so that I access the navbar and be directed appropriately in case of an error.
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
