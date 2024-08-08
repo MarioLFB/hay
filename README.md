@@ -114,12 +114,10 @@ H.A.Y is the website of a Steak House restaurant. The site provides users with a
 <img src="staticfiles\images\images_readme\agile\agile_progress.png">
 </details>
 
-
 ## Design
 
 ### Colours
 The website is designed using dark colors, with a carousel of restaurant photos as the background.
-
 
 ### Fonts
 The chosen fonts were sourced from Google Fonts, with Electrolize as the primary font and sans-serif as the fallback option.
@@ -180,9 +178,7 @@ The wireframes were created using Drawio
 <img src="staticfiles\images\images_readme\wireframes\hay_profile_drawio.png">
 <img src="staticfiles\images\images_readme\wireframes\hay_signup_drawio.png">
 <img src="staticfiles\images\images_readme\wireframes\hay_responsive_drawio.png">
-
 </details>
-
 
 ## Technologies Used
 
@@ -194,8 +190,8 @@ The wireframes were created using Drawio
 - Django
 
 ### Libraries & Tools
-- [Am I Responsive](http://ami.responsivedesign.is/)
-- [Bootstrap v5.2](https://getbootstrap.com/)
+- [BrowserStack](https://www.browserstack.com/)
+- [Bootstrap v5.3](https://getbootstrap.com/)
 - [Chrome dev tools](https://developers.google.com/web/tools/chrome-devtools/)
 - [Font Awesome](https://fontawesome.com/)
 - [Git](https://git-scm.com/)
@@ -208,7 +204,7 @@ The wireframes were created using Drawio
   - [WC3 Validator](https://validator.w3.org/)
   - [Jigsaw W3 Validator](https://jigsaw.w3.org/css-validator/)
   - [JShint](https://jshint.com/)
-  - [Pycodestyle(PEP8)](https://pypi.org/project/pycodestyle/)
+  - [CI Python Linter(PEP8)](https://pep8ci.herokuapp.com/)
   - [Lighthouse](https://developers.google.com/web/tools/lighthouse/)
   - [Wave Validator](https://wave.webaim.org/)
 
@@ -457,7 +453,6 @@ All code was verified and found to be error-free.
 <img src="staticfiles\images\images_readme\validation\pep8\bookings\pep8_test_bookings_forms.png">
 <img src="staticfiles\images\images_readme\validation\pep8\bookings\pep8_test_bookings_models.png">
 <img src="staticfiles\images\images_readme\validation\pep8\bookings\pep8_test_bookings_views.png">
-
 </details>
 
 <details>
@@ -482,7 +477,6 @@ All code was verified and found to be error-free.
 <img src="staticfiles\images\images_readme\validation\pep8\contact\pep8_test_contact_forms.png">
 <img src="staticfiles\images\images_readme\validation\pep8\contact\pep8_test_contact_models.png">
 <img src="staticfiles\images\images_readme\validation\pep8\contact\pep8_test_contact_views.png">
-
 </details>
 
 <details>
@@ -504,7 +498,6 @@ All code was verified and found to be error-free.
 
 #### Views
 <img src="staticfiles\images\images_readme\validation\pep8\menu\pep8_views_menu.png">
-
 </details>
 
 <details>
@@ -522,7 +515,6 @@ All code was verified and found to be error-free.
 #### Tests
 <img src="staticfiles\images\images_readme\validation\pep8\users\pep8_test_users_forms.png">
 <img src="staticfiles\images\images_readme\validation\pep8\users\pep8_test_users_views.png">
-
 </details>
 
 ### Lighthouse
@@ -650,7 +642,6 @@ Check if the user is redirected to the login page | The user is automatically re
 <img src="staticfiles\images\images_readme\tests\manual_test\1\1_sign_up_button.png">
 <img src="staticfiles\images\images_readme\tests\manual_test\1\1_sign_up_message_login.png">
 </details>
-
 
 2. As a user I can login so that I have access to booking
 
@@ -793,8 +784,6 @@ View the Footer | Social media (Instagram) is shown as a footer at the bottom of
 <img src="staticfiles\images\images_readme\tests\manual_test\10\10_home_photo_slide.png">
 <img src="staticfiles\images\images_readme\tests\manual_test\10\10_home_footer.png">
 </details>
-
-
 
 #### Site Owner
 11. As the site owner, I want users to easily navigate the site so that they have a seamless experience.
@@ -1093,4 +1082,3 @@ The images were sourced from Unsplash.com, and the logo was created using Ideogr
 Special thanks to:
 Code Institute
 Mo Shami (mentor)
-
