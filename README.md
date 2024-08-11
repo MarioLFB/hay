@@ -26,7 +26,7 @@
   - [Testing](#testing)
     - [Manual testing](#manual-testing)
     - [Automated testing](#automated-testing)
-    - [Tests on various devices](#tests-on-various-devices)
+    - [Tests on various devices](#device-testing-and-browser-compatibility)
     - [Browser compatibility](#browser-compatibility)
   - [Bugs](#bugs)
   - [Heroku Deployment](#heroku-deployment)
@@ -978,7 +978,7 @@ Each test was organized into its respective folder within the corresponding app.
 <img src="staticfiles\images\images_readme\tests\automated_test\users\users_test_views.png">
 </details>
 
-### Device Testing & Browser compatibility
+### Device Testing and Browser compatibility
 Responsiveness tests and device compatibility checks were performed. 
 Both Google Chrome Developer Tools and BrowserStack were used for this purpose.
 Testing was conducted in both portrait and landscape orientations.
