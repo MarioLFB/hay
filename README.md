@@ -117,8 +117,7 @@ H.A.Y is the website of a Steak House restaurant. The site provides users with a
 ## Design
 
 ### Colours
-The website is designed using dark colors, with a carousel of restaurant photos as the background.
-Colors were also used as the background for containers, buttons, etc. The following colors were used:
+The website features a dark color scheme, with a carousel of restaurant photos serving as the background. Additionally, various colors were applied to the backgrounds of containers, buttons, and other elements. The colors used are as follows.
 <details><summary>Color Palette</summary>
 <img src="staticfiles\images\images_readme\color_palette.png">
 </details>
