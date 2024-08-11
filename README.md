@@ -27,7 +27,6 @@
     - [Manual testing](#manual-testing)
     - [Automated testing](#automated-testing)
     - [Tests on various devices](#device-testing-and-browser-compatibility)
-    - [Browser compatibility](#browser-compatibility)
   - [Bugs](#bugs)
   - [Heroku Deployment](#heroku-deployment)
   - [Credits](#credits)
