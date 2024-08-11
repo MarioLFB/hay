@@ -118,6 +118,10 @@ H.A.Y is the website of a Steak House restaurant. The site provides users with a
 
 ### Colours
 The website is designed using dark colors, with a carousel of restaurant photos as the background.
+Colors were also used as the background for containers, buttons, etc. The following colors were used:
+<details><summary>Color Palette</summary>
+<img src="staticfiles\images\images_readme\color_palette.png">
+</details>
 
 ### Fonts
 The chosen fonts were sourced from Google Fonts, with Electrolize as the primary font and sans-serif as the fallback option.
