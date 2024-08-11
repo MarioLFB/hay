@@ -8,7 +8,6 @@ class TableFormTest(TestCase):
     Test cases for TableForm to validate form validation and saving functionality.
     """
     def test_valid_form(self):
-        # Validates a valid TableForm instance.
         form_data = {
             'table_name': 'Table 1',
             'table_phone': '1234567890',
@@ -21,7 +20,6 @@ class TableFormTest(TestCase):
         self.assertTrue(form.is_valid())
 
     def test_invalid_form(self):
-        # Validates an invalid TableForm instance with invalid email format.
         form_data = {
             'table_name': 'Table 1',
             'table_phone': '1234567890',
@@ -34,7 +32,6 @@ class TableFormTest(TestCase):
         self.assertFalse(form.is_valid())
 
     def test_save_method(self):
-        # Validates saving functionality of TableForm.
         form_data = {
             'table_name': 'Table 1',
             'table_phone': '1234567890',

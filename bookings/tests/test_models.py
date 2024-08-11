@@ -9,7 +9,6 @@ class TableTest(TestCase):
     Tests functionalities of the Table model.
     """
     def setUp(self):
-        # Create a test user
         self.user = User.objects.create_user(
             username='testuser', password='password'
         )
@@ -24,7 +23,6 @@ class TableTest(TestCase):
         }
 
     def test_create_table(self):
-        # Test creating a table in the database
         table = Table.objects.create(**self.table_data)
         self.assertEqual(table.table_name, self.table_data['table_name'])
         self.assertEqual(table.table_phone, self.table_data['table_phone'])
@@ -40,8 +38,6 @@ class TableTest(TestCase):
         self.assertEqual(table.user, self.table_data['user'])
 
     def test_table_str_representation(self):
-        # Test the string representation of the table
         table = Table.objects.create(**self.table_data)
 
-        # Assert that __str__ method returns the table name
         self.assertEqual(str(table), self.table_data['table_name'])
