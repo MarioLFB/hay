@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from .forms import TableForm
 from .models import Table
 from django.contrib.auth.decorators import login_required
@@ -12,7 +12,7 @@ def login_needed(request):
     '''
     return render(request, 'loginneeded.html')
 
-
+@login_required
 def booking_table(request):
     '''
     Function to book a table
@@ -39,7 +39,7 @@ def booking_table(request):
         form = TableForm()
     return render(request, 'bookings/bookings.html', {'form': form})
 
-
+@login_required
 def booked_view(request):
     '''
     Function to display a message to the user that their booking was successful
@@ -58,6 +58,7 @@ def my_bookings(request):
     return render(request, 'bookings/mybookings.html', {'bookings': bookings})
 
 
+@login_required
 def delete_bookings(request):
     '''
     Function to delete all the bookings made by the user
@@ -69,11 +70,12 @@ def delete_bookings(request):
     return render(request, 'bookings/deletebookings.html')
 
 
+@login_required
 def edit_bookings(request, booking_id):
     '''
     Function to edit a booking made by the user
     '''
-    booking = Table.objects.get(pk=booking_id)
+    booking = get_object_or_404(Table, pk=booking_id, user=request.user)
     form = TableForm(instance=booking)
     if request.method == 'POST':
         form = TableForm(request.POST, instance=booking)

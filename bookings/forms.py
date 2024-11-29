@@ -1,5 +1,7 @@
 from django import forms
 from .models import Table
+from datetime import datetime, date
+
 
 
 class TableForm(forms.ModelForm):
@@ -33,7 +35,8 @@ class TableForm(forms.ModelForm):
             'table_date': forms.DateInput(
                 attrs={
                     'type': 'date',
-                    'class': 'form-control custom-border-radius'
+                    'class': 'form-control custom-border-radius',
+                    'min': date.today().strftime('%Y-%m-%d')
                 }
             ),
             'table_time': forms.TimeInput(
@@ -54,6 +57,7 @@ class TableForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         self.user = kwargs.pop('user', None)
         super().__init__(*args, **kwargs)
+        
 
     def clean(self):
         cleaned_data = super().clean()
@@ -61,4 +65,13 @@ class TableForm(forms.ModelForm):
             raise forms.ValidationError(
                 "You have already booked a table."
             )
+
+        table_date = cleaned_data.get('table_date')
+        table_time = cleaned_data.get('table_time')
+
+        if table_date == date.today() and table_time:
+            now = datetime.now().time()
+            if table_time < now:
+                raise forms.ValidationError("You cannot book a time in the past.")
+
         return cleaned_data
