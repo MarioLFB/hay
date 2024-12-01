@@ -88,7 +88,7 @@ class TableForm(forms.ModelForm):
             now = datetime.now().time()
             if table_time_obj < now:
                 raise forms.ValidationError(
-                    "You cannot book a time in the past."
+                    "Reservations for past dates are not allowed. Please choose a future time."
                 )
 
         return cleaned_data
